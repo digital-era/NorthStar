@@ -47,7 +47,6 @@
 #### # 对话北极星 (Talk with North Stars) —— 穿越迷雾的地平线
 
 > **对话回溯：2026-01-13**
-> 
 > **北极星人物：** 余凯（地平线创始人）
 > 
 > **应用链接：** https://talktonorthstar.pages.dev
@@ -83,7 +82,6 @@
 #### # 对话北极星 (Talk with North Stars) —— 智能的本质
 
 > **对话回溯：2026-01-14**
-> 
 > **北极星人物：** Demis Hassabis
 > 
 > **应用链接：** https://talktonorthstar.pages.dev
