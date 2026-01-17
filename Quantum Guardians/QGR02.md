@@ -47,7 +47,9 @@
 #### # 对话北极星 (Talk with North Stars) —— 穿越迷雾的地平线
 
 > **对话回溯：2026-01-13**
+> 
 > **北极星人物：** 余凯（地平线创始人）
+> 
 > **应用链接：** https://talktonorthstar.pages.dev
 
 “我问了余凯关于规模化和竞争的问题。”大成指着影像说道。
@@ -81,7 +83,9 @@
 #### # 对话北极星 (Talk with North Stars) —— 智能的本质
 
 > **对话回溯：2026-01-14**
+> 
 > **北极星人物：** Demis Hassabis
+> 
 > **应用链接：** https://talktonorthstar.pages.dev
 
 “我请教了Hassabis，如何评价DeepSeek的Engram机制。”大智说道。
