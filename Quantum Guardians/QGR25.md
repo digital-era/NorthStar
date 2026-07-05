@@ -48,7 +48,7 @@
 
 “纵观全球AI产业，我最佩服的商业领袖有两个人：SpaceX和特斯拉的马斯克，他是物理世界AI的代表人物；Google DeepMind的哈萨比斯，他是数字世界AI的代表人物。”
 
-大成在星图前踱步：“我从2023年重度使用Google的AI Studio，亲自见证了Google AI被市场唱衰，到Gemini 1.5的反击，再到哈萨比斯统一掌管Google AI带领Google Gemini 3.1逆势崛起；我也见证了马斯克的自动驾驶FSD 14.x跑通了端到端，给在暗夜中摸索的自动驾驶行业点燃了一盏明灯。”
+大成在星图前踱步：“我从2023年重度使用Google的AI Studio，亲自见证了Google AI被市场唱衰，到Gemini 2.5的反击，再到哈萨比斯统一掌管Google AI带领Google Gemini 3.1逆势崛起；我也见证了马斯克的自动驾驶FSD 14.x跑通了端到端，给在暗夜中摸索的自动驾驶行业点燃了一盏明灯。”
 
 “但，我当今又经历着什么？”大成的声音骤然拔高，直指屏幕上那些巨头的Logo，“Google Gemini 3.5模型，特别是编程和Agent，再次被Anthropic Claude、OpenAI Codex强势压制！我看到Google的画图模型从去年世界最惊艳，到被OpenAI的画图模型再次反超；我又看到特斯拉Robotaxi规模化征途再次延期，扩张速度低于Google Waymo；马斯克的xAI Grok呢？联创解散，已经下了牌桌！Meta呢？先发而落后，事不过三，在时代浪潮面前，Meta最多只有一次机会了。”
 
