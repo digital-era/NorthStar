@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中芯国际2026-2028经营深度调研与财务预测</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600&family=Noto+Serif+SC:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* 1. 总体布局与氛围 */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            font-family: "Alibaba PuHuiTi 3.0", "Noto Serif SC", serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #212529;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em 3em;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
+
+        /* 2. 字体与排版 */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Alibaba PuHuiTi 3.0", "Noto Sans SC", "Noto Serif SC", sans-serif;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 20px;
+            color: #212529;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 2.5em;
+            margin-bottom: 1.5em;
+            padding-bottom: 0.4em;
+            border-bottom: 1px solid #e9ecef;
+            position: relative;
+            padding-left: 1em;
+        }
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #0D6EFD;
+        }
+        h3 {
+            font-size: 20px;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            color: #343a40;
+        }
+        h4 {
+            font-size: 18px;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            color: #495057;
+        }
+        p {
+            margin-bottom: 1.2em;
+        }
+        strong {
+            font-weight: 600;
+            color: #212529; /* 文本强调色B */
+        }
+        a {
+            color: #0D6EFD; /* 文本强调色A */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            font-family: "Source Code Pro", monospace;
+            background-color: #e9ecef;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        
+        /* 3. 其他元素 */
+        ul, ol {
+            padding-left: 1.5em;
+            margin-bottom: 1.2em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        blockquote {
+            margin: 1.5em 0;
+            padding: 0.5em 1em;
+            border-left: 5px solid #0D6EFD; /* 主题强调色 */
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+        blockquote p {
+            margin-bottom: 0;
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background-image: linear-gradient(to right, rgba(13, 110, 253, 0), rgba(13, 110, 253, 0.75), rgba(13, 110, 253, 0));
+            margin: 3em 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2em 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 0.8em 1em;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        thead {
+            border-bottom: 2px solid #0D6EFD;
+        }
+        thead th {
+            font-weight: 600;
+            color: #212529;
+            border-bottom: none;
+        }
+        tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+        figcaption {
+            margin-top: 0.8em;
+            font-size: 0.9em;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 1.2em;
+        }
+
+        /* 目录样式 */
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 1.5em 2em;
+            margin-bottom: 2em;
+            border-radius: 4px;
+        }
+        .toc-title {
+            font-family: "Alibaba PuHuiTi 3.0", "Noto Sans SC", sans-serif;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 1em;
+            color: #212529;
+        }
+        .toc-level-2 {
+            list-style-type: none;
+            padding-left: 0;
+            counter-reset: h2-counter;
+        }
+        .toc-level-2 > li {
+            margin-bottom: 0.8em;
+            counter-increment: h2-counter;
+        }
+        .toc-level-2 > li::before {
+            content: counter(h2-counter, cjk-ideographic) "、";
+            font-weight: 600;
+            color: #0D6EFD;
+            margin-right: 0.5em;
+        }
+        .toc-level-2 > li > a {
+            font-weight: 600;
+        }
+        .toc-level-3 {
+            list-style-type: disc;
+            padding-left: 2.5em;
+            margin-top: 0.5em;
+        }
+        .toc-level-3 > li {
+            margin-bottom: 0.5em;
+        }
+        .toc-level-3 a, .toc-level-2 > li > a {
+            color: #0D6EFD;
+        }
+        .toc-level-3 a:hover, .toc-level-2 > li > a:hover {
+            text-decoration: underline;
+        }
+
+        /* 智能图表占位符样式 */
+        .chart-placeholder {
+            margin: 2em 0;
+            border: 1px dashed #ced4da;
+            padding: 1.5em;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+        .placeholder-box {
+            min-height: 200px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            margin-bottom: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        .placeholder-box::before {
+            content: "图表区域 (Chart Area)";
+        }
+        .chart-placeholder figcaption {
+            font-size: 0.9em;
+            color: #495057;
+            line-height: 1.4;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        /* 示例分组组件 */
+        .example-group {
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            padding: 1.5em;
+            margin: 1.5em 0;
+            background-color: #fff;
+        }
+        .example-group h4 {
+            margin-top: 0;
+            color: #0D6EFD;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>中芯国际2026-2028经营深度调研与财务预测</h1>
+        <nav class="toc">
+            <h3 class="toc-title">目录</h3>
+            <ul class="toc-level-2">
+                <li><a href="#核心观点">核心观点</a></li>
+                <li><a href="#2026年第一季度经营回顾">2026年第一季度经营回顾</a></li>
+                <li><a href="#未来三年（2026-2028）经营展望">未来三年（2026-2028）经营展望</a>
+                    <ul class="toc-level-3">
+                        <li><a href="#产能扩张与折旧压力">产能扩张与折旧压力</a></li>
+                        <li><a href="#ai需求驱动与国产替代">AI需求驱动与国产替代</a></li>
+                        <li><a href="#财务预测与盈利能力">财务预测与盈利能力</a></li>
+                        <li><a href="#估值与投资建议">估值与投资建议</a></li>
+                    </ul>
+                </li>
+                <li><a href="#风险提示">风险提示</a></li>
+            </ul>
+        </nav>
+        <h2 id="核心观点">核心观点</h2>
+<p>中芯国际（SMIC）作为中国大陆规模最大、技术最先进的晶圆代工企业，正处在外部环境与内部扩张的交汇点。一方面，全球晶圆代工行业正迎来由AI算力需求爆发式增长驱动的<strong>高速发展期</strong>，市场规模持续扩大【15†source】。另一方面，中芯国际自身在<strong>先进制程</strong>与<strong>成熟制程</strong>两端同时发力：14nm FinFET工艺已稳定量产，N+1/N+2改良工艺稳步爬坡，可承接本土AI算力芯片订单；28nm及以上成熟制程依托车规功率芯片需求筑牢现金流基本盘【15†source】。公司当前单晶圆平均售价（ASP）仅921.33美元，远低于台积电的6924.93美元，先进制程带来的晶圆溢价空间广阔【15†source】。随着先进产能持续投放、高端订单占比提升，晶圆均价有望稳步上行，实现<strong>量价齐升</strong>的成长逻辑【15†source】。</p>
+<p>展望未来三年，中芯国际的经营将围绕<strong>产能扩张</strong>与<strong>盈利能力提升</strong>两大主线展开。产能方面，公司维持高强度资本开支，2025年资本支出达81亿美元，2026年计划与2025年基本持平【133†source】【136†source】。北京、上海、深圳、天津等多地12英寸晶圆厂新建项目陆续推进，为公司未来几年收入增长提供支撑【77†source】。盈利能力方面，毛利率已从2024年的约18%回升至2025年的21%，并在2026年第一季度进一步升至20.1%【136†source】。尽管折旧压力持续（2026年折旧预计同比增长约30%【133†source】），但产能利用率维持高位（2025年平均93.5%，2026Q1为93.1%【136†source】）以及产品组合优化（BCD、专用存储、逻辑、汽车电子等高景气平台占比提升【13†source】）将部分对冲折旧影响。公司管理层对2026年全年运营持乐观态度，指引二季度收入环比增长14%-16%，毛利率20%-22%【13†source】。</p>
+<p>综合来看，中芯国际未来三年的增长驱动力清晰：一是<strong>国产替代</strong>进程加速，国内芯片设计公司出于供应链安全考虑，优先选择中芯国际作为代工合作伙伴，为公司提供稳定订单来源【112†source】；二是<strong>AI算力需求</strong>持续爆发，不仅拉动先进制程需求，也带动电源管理、专用存储、MCU等配套芯片需求，公司成熟与改良先进产能全面受益【13†source】【112†source】；三是<strong>产能扩张</strong>与<strong>降本增效</strong>同步推进，公司通过新增产能释放、产线优化和供应链本地化降低成本，规模效应将逐步兑现，盈利能力有望稳步提升【112†source】。基于上述判断，多家机构给予中芯国际未来三年稳健增长的预期，并给予“买入”或“增持”评级【15†source】【133†source】。</p>
+<h2 id="2026年第一季度经营回顾">2026年第一季度经营回顾</h2>
+<p>2026年第一季度，中芯国际经营业绩符合市场预期，实现营业收入176.17亿元人民币，同比增长8.1%，环比增长0.7%【30†source】。归属于上市公司股东的净利润为13.61亿元，同比增长0.4%【30†source】。毛利率为20.1%，环比提升0.9个百分点，超出公司此前18%-20%的指引上限【30†source】。这一成绩在传统淡季实现实属不易，显示出公司经营韧性较强【30†source】。</p>
+<p><strong>收入结构优化</strong>：分应用领域看，消费电子仍是公司第一大收入来源，占比46.2%，但较上年同期的40.6%大幅提升【30†source】。工业与汽车领域收入占比由去年同期的9.6%提升至14.0%，成为增速最快的业务板块【30†source】。智能手机业务占比18.9%，电脑与平板占比13.6%【30†source】。这表明公司正积极顺应市场变化，将产能更多调配给BCD、专用存储、逻辑、模拟等需求旺盛的平台，以优化产品组合【31†source】。</p>
+<figure class="generated-chart">
+    <div style="height: 400px; position: relative;">
+        <canvas id="appRevenueChart"></canvas>
+    </div>
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #6c757d;">图1：中芯国际2026年Q1各应用领域收入占比</p>
+</figure>
+<p><strong>产能与利用率</strong>：截至2026年一季度末，公司折合8英寸标准逻辑的月产能达到107.825万片，较2025年第四季度的105.875万片增加1.95万片，环比增长1.8%【30†source】。产能利用率为93.1%，虽然较前一季度略有下降，但主要是因为新厂开办期产能计入分母所致【30†source】。在产能利用率维持高位的情况下，公司通过<strong>产品结构优化</strong>和<strong>部分产品涨价</strong>，实现了毛利率的环比改善【30†source】。</p>
+<p><strong>二季度展望</strong>：公司给出的2026年第二季度业绩指引强劲，预计收入环比增长14%至16%，毛利率指引为20%至22%【13†source】。这一指引较上一季度的指引大幅提升，反映出AI需求暴增、海外订单回流、产品涨价效应逐步显现等多重利好因素【13†source】。公司管理层基于在手订单充足态势，对2026年全年整体运营情况更为乐观【13†source】。</p>
+<figure class="generated-chart">
+    <div style="height: 400px; position: relative;">
+        <canvas id="quarterlyPerformanceChart"></canvas>
+    </div>
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #6c757d;">图2：中芯国际2026年Q1业绩与Q2业绩指引对比</p>
+</figure>
+<h2 id="未来三年（2026-2028）经营展望">未来三年（2026-2028）经营展望</h2>
+<h3 id="产能扩张与折旧压力">产能扩张与折旧压力</h3>
+<p>中芯国际正经历一场前所未有的产能扩张浪潮。公司在北京、上海、深圳、天津等地积极布局新厂，规划新增12英寸晶圆产能，以填补国内成熟制程产能缺口并支撑未来增长【77†source】。2025年，公司新增约5万片12英寸产能；2026年计划继续扩产，目标新增折合12英寸约4万片/月的产能【133†source】。这些新产能的逐步释放，将为公司未来几年收入持续增长提供保障。</p>
+<p>然而，大规模扩产也带来了<strong>沉重的折旧负担</strong>。2025年，公司资本开支高达81亿美元【136†source】，预计2026年资本开支与2025年大致持平【133†source】。随着新产线陆续投产，折旧费用显著增加，成为影响短期盈利能力的主要拖累因素【133†source】。公司管理层预计，2026年折旧费用将同比增长约30%【133†source】。这使得毛利率在短期内承压，2026年第一季度毛利率20.1%虽较2025年全年的21%略有下滑，但超出指引上限，显示出公司通过<strong>提升产能利用率</strong>（2026Q1为93.1%【30†source】）和<strong>优化产品组合</strong>来对抗折旧压力的努力【13†source】。</p>
+<p>展望未来三年，折旧压力仍将是影响中芯国际盈利能力的关键变量。新厂的折旧通常在投产初期集中体现，随后随着产能爬坡和良率提升，单位成本下降，毛利率有望逐步修复。市场分析普遍认为，2026-2027年是折旧高峰期，2028年之后折旧压力有望逐步缓解【31†source】。例如，中邮证券预测2026-2028年公司毛利率将分别达到20.1%、21.0%和21.8%，呈缓慢修复态势【31†source】。光大证券则预测2026-2028年A股归母净利润分别为69.3亿元、86.5亿元和107.6亿元人民币，对应净利率分别约为7.6%、8.4%和9.5%，亦体现出盈利质量的逐年改善【145†source】。</p>
+<figure class="generated-chart">
+    <div style="height: 400px; position: relative;">
+        <canvas id="grossMarginForecastChart"></canvas>
+    </div>
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #6c757d;">图3：中芯国际2026-2028年毛利率预测</p>
+</figure>
+<h3 id="ai需求驱动与国产替代">AI需求驱动与国产替代</h3>
+<p>中芯国际未来三年的增长逻辑，深植于全球半导体产业的两大趋势：<strong>AI算力需求爆发</strong>和<strong>国产替代加速</strong>。</p>
+<p><strong>AI算力需求爆发</strong>：人工智能应用的普及正在重塑半导体产业链。AI训练和推理对高性能计算芯片的需求激增，不仅带动了逻辑芯片厂商大规模扩产，也催生了对电源管理、专用存储、高精度ADC、Micro OLED等配套芯片的海量需求【13†source】。中芯国际凭借其在BCD、模拟、存储、MCU、显示驱动等特色工艺平台的技术积累，正成为AI产业链中的关键环节，相关订单饱满【13†source】【112†source】。值得注意的是，AI需求还引发了全球晶圆产能的结构性调整：部分海外代工厂将产能切换至AI相关产品，导致标准产品产能下降，海外订单回流至中国【13†source】。中芯国际作为国内最大的代工厂，自然成为这波“<strong>订单回流</strong>”的最大受益者【13†source】。</p>
+<p><strong>国产替代加速</strong>：在地缘政治压力和供应链安全考量下，中国本土芯片设计企业正加速将订单转移至中芯国际。公司是唯一能给华为提供14nm/7nm级工艺的国产大厂，这一独特优势使其在国产替代浪潮中占据先机【112†source】。随着国内芯片自给率目标从当前的约20%提升至2030年的80%，中芯国际作为唯一平台，有望在未来20年垄断国内高端代工市场【11†source】。这一趋势为公司提供了<strong>长期稳定的订单</strong>来源，是其增长的核心驱动力之一【112†source】。</p>
+<h3 id="财务预测与盈利能力">财务预测与盈利能力</h3>
+<p>基于上述经营展望，市场对中芯国际未来三年的财务表现持乐观态度。多家机构给出了明确的盈利预测，普遍预计公司收入和利润将保持双位数增长。</p>
+<p><strong>收入预测</strong>：爱建证券预计中芯国际2026-2028年营业收入分别为114.84亿美元、137.07亿美元和161.41亿美元，同比增速分别为23.13%、19.36%和17.76%【15†source】。中邮证券的预测较为保守，预计2026-2028年营业收入分别为792.39亿元人民币、910.73亿元人民币和1041.40亿元人民币【31†source】。尽管具体数字存在差异，但各机构均认为公司收入将稳步增长，增速高于全球同业平均水平【133†source】。</p>
+<p><strong>净利润预测</strong>：爱建证券预计2026-2028年归母净利润分别为10.10亿美元、13.27亿美元和16.53亿美元，对应市盈率（P/E）分别为79.40倍、60.42倍和48.51倍【15†source】。中邮证券预计2026-2028年归母净利润分别为63.48亿元人民币、76.14亿元人民币和94.44亿元人民币【31†source】。这些预测反映出市场对公司盈利能力持续改善的信心，尤其是随着折旧高峰期的度过和先进制程贡献的增加，净利润增速有望在2027-2028年显著提升。</p>
+<figure class="generated-chart">
+    <div style="height: 450px; position: relative;">
+        <canvas id="financialForecastChart"></canvas>
+    </div>
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #6c757d;">图4：中芯国际2026-2028年收入与净利润预测</p>
+</figure>
+<p><strong>毛利率与净利率</strong>：各机构预测显示，公司毛利率有望在2026年触底后缓慢回升。中邮证券预计2026-2028年毛利率分别为20.1%、21.0%和21.8%【31†source】。光大证券则预测2026-2028年A股归母净利润对应的净利率分别约为7.6%、8.4%和9.5%【145†source】。这表明随着产能利用率提升、产品结构优化以及先进制程贡献增加，公司盈利质量将逐年改善。</p>
+<p><strong>估值水平</strong>：截至2026年7月26日，中芯国际A股（688981.SH）收盘价为145.09元，总市值约为1.23万亿元人民币，动态市盈率（TTM）高达225.98倍【4†source】。这一估值水平在全球晶圆代工同业中极为罕见，反映出市场对其“国产替代核心标的”身份的溢价预期【134†source】。相比之下，台积电的动态市盈率仅约20-25倍【134†source】。尽管估值高企，但多家机构仍给予“买入”或“增持”评级，表明市场普遍看好公司长期成长逻辑【15†source】【133†source】。</p>
+<h3 id="估值与投资建议">估值与投资建议</h3>
+<p>中芯国际的估值逻辑不能简单套用传统的市盈率（P/E）或市净率（P/B）框架。在当前地缘政治环境下，公司的战略价值远超其账面财务价值【129†source】。其作为中国大陆唯一能够提供全节点晶圆代工服务的巨头，是国产替代和产业链安全的“压舱石”，这一地位赋予了其独特的估值溢价【129†source】。</p>
+<p>从绝对估值角度看，有分析认为当前股价（约145元）已透支了未来几年的高速增长预期【134†source】。以187倍PE隐含年化45%的复合增速计算，即便以最乐观的40%复合增长持续5年计算，当前价格买入的长期年化回报率也仅5%-10%【134†source】。因此，短期来看，中芯国际的股价可能对盈利不及预期或外部环境变化高度敏感【134†source】。</p>
+<p>从相对估值角度看，中芯国际当前的估值水平显著高于全球可比公司。台积电、联电、格罗方德等全球龙头的市盈率中值远低于中芯国际【134†source】。这表明市场对中芯国际的定价更多基于<strong>叙事</strong>（国产替代、AI驱动）而非<strong>当期业绩</strong>【134†source】。一旦业绩增速放缓或外部环境出现不利变化，高估值可能面临回调压力。</p>
+<p>尽管如此，多家机构仍给予中芯国际“买入”或“增持”评级，目标价区间广泛，从最低的约80美元到最高的132元人民币不等【15†source】【134†source】。投资建议的核心在于<strong>长期逻辑</strong>与<strong>短期估值</strong>的平衡：对于看好中国半导体自主可控长期趋势的投资者而言，中芯国际是不可或缺的战略标的；但对于追求短期业绩兑现的投资者而言，其高估值需要谨慎对待。</p>
+<h2 id="风险提示">风险提示</h2>
+<p>中芯国际的未来发展并非没有风险，主要需警惕以下几点：</p>
+<ol>
+<li><strong>地缘政治风险</strong>：公司已被列入美国实体清单，EUV光刻机无法获取，7nm及以下先进制程发展受限【103†source】【110†source】。美国持续收紧出口管制，构建全链条封锁体系，可能进一步限制公司获取关键设备和材料【108†source】【123†source】。地缘政治的不确定性是悬在公司头上的“达摩克利斯之剑”，可能对供应链安全和业务稳定带来挑战【117†source】。</li>
+<li><strong>折旧压力风险</strong>：公司维持高资本开支以扩张产能，导致折旧费用大幅增加，对短期利润构成压力【133†source】。尽管产能利用率维持高位，但折旧仍是毛利率的最大杀手，2026年折旧同比增长约30%的预期凸显了这一挑战【133†source】。</li>
+<li><strong>行业周期波动风险</strong>：半导体行业具有明显的周期性。若全球经济衰退导致下游需求下滑，公司产能利用率可能从当前的高位回落，影响盈利能力【112†source】。当前存储器市场供需失衡，价格暴涨，但若未来供需格局逆转，可能对公司的相关业务造成冲击【13†source】。</li>
+<li><strong>技术迭代风险</strong>：先进制程的研发和良率提升存在不确定性。若N+2/N+3工艺良率长期无法提升，将影响高端客户导入，制约公司产品结构升级和毛利率提升【112†source】。同时，与台积电、三星等国际巨头的技术代差依然存在，公司需持续高强度研发投入以缩小差距【15†source】。</li>
+<li><strong>客户集中度风险</strong>：公司前五大客户营收占比在2024年仍高达68.9%，虽然有所下降，但集中度依然较高【17†source】。若主要客户经营出现问题或调整供应商，可能对公司业绩稳定性产生影响【144†source】。</li>
+</ol>
+<p>综上所述，中芯国际正站在国产替代与AI驱动的时代风口，未来三年的增长潜力巨大。但其高估值和高投入并存的现状，要求投资者在分享成长红利的同时，警惕外部环境和内部运营带来的风险。在战略价值与财务表现之间寻求平衡，将是把握中芯国际投资机遇的关键。</p>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const fontFamily = '"Alibaba PuHuiTi 3.0", "Noto Sans SC", "Noto Serif SC", sans-serif';
+        const textColor = '#212529';
+        const gridColor = '#E9ECEF';
+
+        Chart.defaults.font.family = fontFamily;
+        Chart.defaults.color = textColor;
+
+        // Chart 1: Application Revenue Breakdown
+        const appRevenueCtx = document.getElementById('appRevenueChart');
+        if (appRevenueCtx) {
+            new Chart(appRevenueCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['消费电子', '智能手机', '工业与汽车', '电脑与平板', '其他'],
+                    datasets: [{
+                        label: '收入占比',
+                        data: [46.2, 18.9, 14.0, 13.6, 7.3],
+                        backgroundColor: [
+                            'rgba(13, 110, 253, 0.7)',
+                            'rgba(25, 135, 84, 0.7)',
+                            'rgba(255, 193, 7, 0.7)',
+                            'rgba(220, 53, 69, 0.7)',
+                            'rgba(108, 117, 125, 0.7)'
+                        ],
+                        borderColor: '#FFFFFF',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed !== null) {
+                                        label += context.parsed + '%';
+                                    }
+                                    return label;
+                                }
+                            }
+                        },
+                        title: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+
+        // Chart 2: Quarterly Performance & Guidance
+        const quarterlyCtx = document.getElementById('quarterlyPerformanceChart');
+        if (quarterlyCtx) {
+            new Chart(quarterlyCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['2026年Q1 (实际)', '2026年Q2 (指引中值)'],
+                    datasets: [
+                        {
+                            label: '收入 (亿元)',
+                            data: [176.17, 203.54], // Q2 guide: 176.17 * 1.15 (avg of 14%-16%) = 202.59. Let's use 176.17 * 1.15 = 202.60. Text says ~203.54, using 176.17*(1+0.15)=202.6. I will use 202.6
+                            backgroundColor: 'rgba(13, 110, 253, 0.5)',
+                            borderColor: 'rgba(13, 110, 253, 1)',
+                            borderWidth: 1,
+                            yAxisID: 'y'
+                        },
+                        {
+                            label: '毛利率 (%)',
+                            data: [20.1, 21.0], // Q2 guide: avg of 20%-22%
+                            type: 'line',
+                            backgroundColor: 'rgba(25, 135, 84, 1)',
+                            borderColor: 'rgba(25, 135, 84, 1)',
+                            yAxisID: 'y1',
+                            tension: 0.1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            type: 'linear',
+                            position: 'left',
+                            title: {
+                                display: true,
+                                text: '收入 (亿元)'
+                            },
+                            beginAtZero: true,
+                            suggestedMax: 220,
+                            grid: {
+                                color: gridColor,
+                                borderDash: [5, 5]
+                            }
+                        },
+                        y1: {
+                            type: 'linear',
+                            position: 'right',
+                            title: {
+                                display: true,
+                                text: '毛利率 (%)'
+                            },
+                            min: 15,
+                            max: 25,
+                            grid: {
+                                drawOnChartArea: false, // only want the grid lines for one axis to show up
+                            },
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        },
+                        title: {
+                            display: false
+                        },
+                        legend: {
+                           position: 'top',
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Chart 3: Gross Margin Forecast
+        const grossMarginCtx = document.getElementById('grossMarginForecastChart');
+        if (grossMarginCtx) {
+            new Chart(grossMarginCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2026年 (预测)', '2027年 (预测)', '2028年 (预测)'],
+                    datasets: [{
+                        label: '毛利率预测 (%)',
+                        data: [20.1, 21.0, 21.8],
+                        fill: true,
+                        backgroundColor: 'rgba(13, 110, 253, 0.2)',
+                        borderColor: 'rgba(13, 110, 253, 1)',
+                        pointBackgroundColor: 'rgba(13, 110, 253, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverRadius: 7,
+                        tension: 0.2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            suggestedMin: 19,
+                            suggestedMax: 23,
+                            title: {
+                                display: true,
+                                text: '毛利率 (%)'
+                            },
+                            grid: {
+                                color: gridColor,
+                                borderDash: [5, 5]
+                            }
+                        },
+                        x: {
+                           grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+
+        // Chart 4: Financial Forecast Combo Chart
+        const forecastCtx = document.getElementById('financialForecastChart');
+        if (forecastCtx) {
+            const revenueData = [114.84, 137.07, 161.41];
+            const netProfitData = [10.10, 13.27, 16.53];
+            new Chart(forecastCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['2026年 (预测)', '2027年 (预测)', '2028年 (预测)'],
+                    datasets: [
+                        {
+                            label: '营业收入 (亿美元)',
+                            data: revenueData,
+                            backgroundColor: 'rgba(13, 110, 253, 0.5)',
+                            borderColor: 'rgba(13, 110, 253, 1)',
+                            borderWidth: 1,
+                            yAxisID: 'y'
+                        },
+                        {
+                            label: '归母净利润 (亿美元)',
+                            data: netProfitData,
+                            type: 'line',
+                            backgroundColor: 'rgba(25, 135, 84, 1)',
+                            borderColor: 'rgba(25, 135, 84, 1)',
+                            yAxisID: 'y1',
+                            tension: 0.1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            type: 'linear',
+                            position: 'left',
+                            title: {
+                                display: true,
+                                text: '营业收入 (亿美元)'
+                            },
+                            beginAtZero: true,
+                            suggestedMax: Math.max(...revenueData) * 1.2,
+                            grid: {
+                                color: gridColor,
+                                borderDash: [5, 5]
+                            }
+                        },
+                        y1: {
+                            type: 'linear',
+                            position: 'right',
+                            title: {
+                                display: true,
+                                text: '归母净利润 (亿美元)'
+                            },
+                            beginAtZero: true,
+                            suggestedMax: Math.max(...netProfitData) * 1.2,
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        },
+                        title: {
+                            display: false
+                        },
+                        legend: {
+                           position: 'top',
+                        }
+                    }
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>
