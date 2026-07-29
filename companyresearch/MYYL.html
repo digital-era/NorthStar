@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫眼娱乐2026~2028年经营分析与财务预测</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&family=Noto+Serif+SC:wght@400;600&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-color: #FFFFFF;
+            --content-bg: #FFFFFF;
+            --text-color: #212529;
+            --primary-color: #0D6EFD;
+            --border-color: #dee2e6;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --text-muted: #6c757d;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Noto Serif SC", serif;
+            font-size: 16px;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px 60px;
+            background-color: var(--content-bg);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Noto Sans SC", "Noto Serif SC", sans-serif;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-top: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 2.5em;
+            margin-bottom: 1.5em;
+            padding-bottom: 0.4em;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+            padding-left: 15px;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 14px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0a58ca;
+        }
+
+        strong, b {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        ul, ol {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        blockquote {
+            margin: 1.5em 0;
+            padding: 1em 1.5em;
+            border-left: 5px solid var(--primary-color);
+            background-color: var(--light-gray);
+            color: var(--text-muted);
+            border-radius: 0 4px 4px 0;
+        }
+
+        blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2em 0;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            padding: 0.8em 1em;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead {
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        thead th {
+            font-family: "Noto Sans SC", sans-serif;
+            font-weight: 600;
+        }
+
+        tbody tr:hover {
+            background-color: #f0f8ff;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-image: linear-gradient(to right, rgba(13, 110, 253, 0), rgba(13, 110, 253, 0.75), rgba(13, 110, 253, 0));
+            margin: 3em 0;
+        }
+
+        code {
+            font-family: "Source Code Pro", monospace;
+            background-color: var(--medium-gray);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background-color: var(--light-gray);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5em 2em;
+            margin-bottom: 2.5em;
+        }
+        .toc-title {
+            font-family: "Noto Sans SC", sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 1em;
+            color: var(--text-color);
+        }
+        .toc ul {
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .toc-level-2 {
+            counter-reset: h2-counter;
+        }
+        .toc-level-2 > li {
+            font-size: 1.05em;
+            margin-bottom: 0.8em;
+            counter-increment: h2-counter;
+        }
+        .toc-level-2 > li::before {
+            content: counter(h2-counter, cjk-ideographic) "、 ";
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .toc-level-3 {
+            padding-left: 2em;
+            margin-top: 0.6em;
+        }
+        .toc-level-3 li {
+            font-size: 0.95em;
+            margin-bottom: 0.5em;
+            list-style-type: disc;
+            color: var(--primary-color);
+        }
+        .toc a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        .generated-chart {
+            margin: 2em 0;
+        }
+
+        .chart-caption {
+            font-size: 0.9em;
+            color: #6c757d;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>猫眼娱乐2026~2028年经营分析与财务预测</h1>
+        <nav class="toc">
+            <p class="toc-title">目录</p>
+            <ul class="toc-level-2">
+                <li><a href="#市场环境与行业趋势">市场环境与行业趋势</a></li>
+                <li><a href="#公司业务回顾与核心优势">公司业务回顾与核心优势</a></li>
+                <li><a href="#财务业绩回顾与近期展望">财务业绩回顾与近期展望</a></li>
+                <li><a href="#未来三年财务预测20262028">未来三年财务预测（2026~2028）</a></li>
+                <li><a href="#估值与投资建议">估值与投资建议</a></li>
+            </ul>
+        </nav>
+        <h2 id="市场环境与行业趋势">市场环境与行业趋势</h2>
+        <p>中国电影市场在经历疫情冲击后，正处于复苏与转型并存的关键阶段。根据国家电影局数据，2023年全国电影总票房约549亿元，较2022年实现恢复性增长【51†source】。进入2024年，市场进一步回暖，全年含服务费票房约610亿元【50†source】。展望2025年，行业预计将回归常态，但增长动能正从单纯依赖银幕扩张转向内容精品化和运营精细化【55†source】。综合多方预测，2026年全国电影票房有望突破650亿元人民币，年均复合增长率预计维持在6%~8%的水平【50†source】。到2030年，市场规模有望突破900亿元【50†source】。</p>
+        <p>这一增长预期背后，是观众结构和消费习惯的深刻演变。年轻化、分众化趋势显著，Z世代成为核心观影群体，对沉浸式体验和社交化观影的需求不断提升【50†source】。技术革新正深度重塑产业链，虚拟拍摄、AI生成内容（AIGC）等技术逐步从概念走向产业化应用，成为电影行业降本增效的“新质生产力”【52†source】。同时，“观影+兴趣社交+IP消费”的新模式正在形成，推动影院从单一的票房放映终端，转型为融合餐饮、文创、社交娱乐等多元业态的文化社交枢纽【52†source】。</p>
+        <p>在票务平台格局方面，市场高度集中，形成“双寡头”竞争态势。根据艾瑞咨询数据，截至2025年，猫眼娱乐以48.7%的市场份额位居行业首位，阿里巴巴影业旗下的淘票票（与大麦协同运营）以36.2%的份额紧随其后，两者合计占据84.9%的市场份额，而其余所有票务平台合计仅占15.1%，且呈现逐年下降趋势【49†source】【54†source】。展望2026年，这一格局预计仍将保持，猫眼有望凭借其在内容宣发、数据分析和影视投资等领域的深度布局，持续巩固其领先地位，市场占有率预计约为42%【71†source】。淘票票依托阿里生态，在三四线城市及年轻用户中具备较强竞争力，份额预计约为35%【71†source】。同时，以抖音、快手为代表的短视频平台正通过“短视频+直播+票务”的新型营销模式迅速崛起，预计将成为仅次于传统票务平台的第二大票务分发渠道，合计市占率有望达到15%【71†source】。</p>
+        <figure class="generated-chart">
+            <div style="height: 400px; position: relative;">
+                <canvas id="marketShareChart"></canvas>
+            </div>
+            <p class="chart-caption">图1：2025年中国在线电影票务平台市场份额对比</p>
+        </figure>
+        <h2 id="公司业务回顾与核心优势">公司业务回顾与核心优势</h2>
+        <p>猫眼娱乐是中国领先的“科技+全文娱”服务提供商，业务覆盖在线娱乐票务、娱乐内容服务、广告服务及其他业务四大板块【77†source】。其核心优势在于将科技与文娱深度结合，构建了一个连接并赋能消费者与娱乐行业的综合性平台生态系统【73†source】。</p>
+        <p><strong>1. 全文娱战略升级与“猫爪模型”生态</strong><br>2019年，猫眼娱乐正式发布“猫爪模型”，标志着公司从单一的票务平台向全文娱生态服务商的全面升级【73†source】。该模型由票务、内容、数据、营销和资金五大平台组成，旨在服务于现场娱乐、短视频、视频、电影、文娱媒体、剧集、音乐、艺人KOL等全文娱产业链【73†source】。通过这一战略，猫眼在巩固其在线电影票务市场60%以上份额的绝对领先地位的同时，将高频的票务业务作为入口，向低频但高价值的内容投资、宣发、IP衍生等业务延伸，形成协同效应，为全文娱市场带来增量价值【73†source】。</p>
+        <p><strong>2. 数据与技术赋能的行业“隐形大脑”</strong><br>猫眼娱乐拥有全行业最完整的观影用户数据库，覆盖超过90%的观影人群【86†source】。依托强大的数据分析和AI技术，公司构建了行业领先的市场分析和决策支持系统【73†source】。其票房预测准确率高达92%，宣发资源投放的ROI较行业平均水平高出30%【86†source】。此外，公司积极探索AI技术在影视制作和营销中的应用，通过AI生成分镜等技术压缩影片制作周期、降低制作成本，并联动影院实时调整票价及场次，以最大化单场产出效率【86†source】。这种数据和技术驱动的模式，不仅提升了自身的运营效率，也通过“猫眼专业版”等工具为内容方、宣发方、场馆和放映端提供全面的决策支持【73†source】，成为行业的“隐形大脑”。</p>
+        <p><strong>3. 业务多元化构筑的强大抗周期能力</strong><br>猫眼娱乐的业务多元化战略显著提升了其抗风险能力。公司的现场演出业务持续高速增长，2025年上半年，其演出总GMV增速远超行业平均水平，地方曲艺和脱口秀品类的GMV同比增长均超过80%，境外地区的自营演出业务GMV和销售收入在2025财年均实现突破性高速增长【75†source】【77†source】。此外，公司积极布局IP衍生品业务，已完成从IP版权到开发、生产和销售的全链路能力建设，并推出了线下新零售品牌“MmmGoods吃谷子”，首家IP主题新零售旗舰店预计将于2026年上半年在北京正式运营【77†source】。这些新业务与核心票务、宣发业务形成“高频打低频”的协同效应，有效平滑了电影市场周期性波动对业绩的影响。</p>
+        <h2 id="财务业绩回顾与近期展望">财务业绩回顾与近期展望</h2>
+        <p><strong>1. 2025年业绩回顾：盈利能力显著修复</strong><br>猫眼娱乐2025年全年业绩实现了强劲复苏。公司实现营业收入46.32亿元，同比增长13.5%；归属于母公司股东的净利润为5.63亿元，同比增长209.6%；经调整净利润为6.77亿元，同比增长118.7%【79†source】。这一增长主要得益于全国电影票房大盘的回暖，以及公司在线娱乐票务服务和娱乐内容服务业绩的增加【25†source】。全年毛利率提升至43.3%，同比增加3.5个百分点，经营利润率也达到14.6%【25†source】。公司董事会建议派发末期股息每股0.22港元，体现出对现金流的信心和对股东回报的重视【107†source】。</p>
+        <p><strong>2. 2026年上半年盈警：短期业绩承压</strong><br>尽管2025年业绩亮眼，但公司发布的盈利预警显示，2026年上半年预计将出现亏损，净亏损区间为500万至5500万元人民币，而2025年同期为净利润1.79亿元【75†source】【80†source】。这一盈转亏的局面主要由以下因素导致：首先，2026年上半年中国电影总票房为173.54亿元，同比大幅下降40.6%，观影人次为4.21亿，同比下降34.3%【75†source】。电影市场头部影片供应不足、观影需求波动，导致公司参与的部分影片票房表现不及预期【75†source】。其次，随着线下演出市场的持续热度，公司继续加大对演出业务的投入，以进一步扩大优势、提升竞争力【75†source】。最后，基于行业面临的阶段性压力，公司对部分经营承压的合作方的其他应收款项计提了不超过1亿元人民币的减值拨备【75†source】。尽管短期业绩承压，但公司强调，暑期档以来参与的多部影片票房表现优异，如主控宣传/发行/出品的《功夫女足》票房突破17亿元，《八仙!》票房超过4.6亿元【75†source】【80†source】。下半年演出业务将服务周杰伦、王俊凯等艺人大型演唱会及KPL等赛事，IP业务也已与《玩具总动员5》等形成合作【75†source】【80†source】，这些积极因素有望在下半年逐步兑现。</p>
+        <figure class="generated-chart">
+            <div style="height: 400px; position: relative;">
+                <canvas id="h1ProfitChart"></canvas>
+            </div>
+            <p class="chart-caption">图2：猫眼娱乐2025与2026年上半年归母净利润对比 (单位：亿元人民币)</p>
+        </figure>
+        <h2 id="未来三年财务预测20262028">未来三年财务预测（2026~2028）</h2>
+        <p>展望2026年至2028年，猫眼娱乐的财务表现预计将经历一个从调整到修复、再到稳步增长的过程。基于当前市场环境、公司业务布局和战略投入，多家机构对猫眼娱乐未来三年的营收和利润进行了预测，但观点存在一定分歧。</p>
+        <p><strong>1. 2026年：调整与修复期</strong><br>由于2026年上半年电影市场的大幅下滑和公司对演出业务的持续投入，多家机构下调了对猫眼娱乐2026年业绩的预测。摩根士丹利将猫眼娱乐2026年至2028年的收入预测分别下调8%、3%和2%，以反映行业表现较弱【3†source】【22†source】。同期，经调整纯利预测则分别下调12%、13%和13%【3†source】【22†source】。广发证券预计公司2026年营业收入为40.07亿元，同比下降13.5%；经调整净利为4.84亿元，同比下降28.5%【32†source】。国海证券的预测相对乐观，预计2026年营业收入为43.41亿元，同比增长-7.7%；归母净利润为3.83亿元，同比增长-32.4%；经调整净利润为4.98亿元，同比增长-26.5%【25†source】。综合来看，市场普遍预期2026年猫眼娱乐的营收将出现一定幅度的下滑，但净利润的下滑幅度将更大，这反映出公司在内容投资和宣发成本上的刚性支出，以及为拓展新业务而进行的战略性投入。尽管如此，若下半年电影市场能如预期般回暖，且新业务开始贡献增量，公司全年业绩有望避免大幅亏损，实现盈亏平衡或微利【8†source】。</p>
+        <p><strong>2. 2027年：增长动能恢复</strong><br>进入2027年，随着电影市场基数的回落和新业务贡献的增加，猫眼娱乐的财务表现有望迎来修复性增长。国海证券预计公司2027年营业收入为47.58亿元，同比增长10.4%；归母净利润为4.73亿元，同比增长23.5%；经调整净利润为5.89亿元，同比增长18.5%【25†source】。申万宏源的预测则相对保守，预计2027年营业收入为46.23亿元，同比增长6.6%；经调整净利润为6.03亿元，同比增长22.4%【100†source】。整体而言，市场预期2027年公司营收将恢复至接近2025年的水平，净利润实现两位数增长。这一增长主要建立在以下假设之上：其一，电影市场在经历2026年的调整后，2027年票房将实现温和增长，带动公司票务和宣发业务收入回升；其二，公司在线下演出、IP衍生品等新业务上的投入开始产生规模效应，贡献新的利润增长点；其三，公司成本管控能力持续提升，销售和管理费用率保持稳定或小幅下降。</p>
+        <p><strong>3. 2028年：迈向新增长周期</strong><br>展望2028年，猫眼娱乐有望迈入新一轮的增长周期。国海证券预计公司2028年营业收入为50.90亿元，同比增长7.9%；归母净利润为5.57亿元，同比增长17.8%；经调整净利润为6.73亿元，同比增长14.2%【25†source】。申万宏源的预测显示，2028年营业收入为49.19亿元，同比增长6.4%；经调整净利润为7.13亿元，同比增长18.3%【100†source】。这表明市场预期2028年公司营收将突破50亿元大关，净利润增速进一步提升。这一增长动力将来自多方面：首先，电影市场在经历周期性调整后，有望迎来内容供给和观众需求的双重修复，市场重回增长轨道；其次，公司作为行业龙头，将持续受益于市场集中度的提升和其在头部内容上的布局优势；再次，公司新业务的规模效应将更加显现，现场娱乐票务和IP衍生品业务有望成为新的利润增长引擎；最后，公司坚持“科技+全文娱”战略，通过AI、大数据等技术的应用，持续优化运营效率，提升盈利能力。</p>
+        <figure class="generated-chart">
+            <div style="height: 450px; position: relative;">
+                <canvas id="revenueProfitChart"></canvas>
+            </div>
+            <p class="chart-caption">图3：猫眼娱乐2026-2028年营业收入与经调整净利润预测 (单位：亿元人民币)</p>
+        </figure>
+        <h2 id="估值与投资建议">估值与投资建议</h2>
+        <p>从估值角度来看，猫眼娱乐当前的估值水平处于历史低位。截至2026年7月，公司滚动市盈率（PE TTM）仅在8至10倍区间波动，远低于港股影视娱乐行业平均的15至20倍【36†source】。这一估值水平未能充分反映公司在电影宣发领域的龙头地位、其在“科技+全文娱”战略下构筑的强大生态壁垒，以及未来业绩修复和增长的潜力【36†source】。</p>
+        <figure class="generated-chart">
+            <div style="height: 400px; position: relative;">
+                <canvas id="peRatioChart"></canvas>
+            </div>
+            <p class="chart-caption">图4：猫眼娱乐与港股影视娱乐行业平均市盈率对比</p>
+        </figure>
+        <p>多家机构维持了对猫眼娱乐的“买入”或“增持”评级。广发证券给予公司2026年15倍的PE估值（以经调整净利计算），对应合理价值7.08港元/股【32†source】。申万宏源基于2026年经调整净利润预测，给予目标价6.80港元【100†source】。国泰海通证券首次覆盖给予“增持”评级，目标价9.43港元【110†source】。尽管短期业绩承压，但机构普遍看好公司长期发展，认为其在行业调整周期中展现出的抗风险能力和战略定力，将为下一轮增长奠定基础。</p>
+        <p>综上所述，猫眼娱乐正处于一个关键的转型与布局期。短期内，公司面临电影市场周期性调整和新业务投入的双重压力，业绩出现波动。但中长期来看，公司凭借其在票务、宣发领域的龙头地位，以及在数据、技术、IP衍生等新业务上的前瞻布局，有望在市场回暖时实现业绩的快速修复，并打开新的增长空间。对于投资者而言，需要耐心等待行业拐点的到来，同时关注公司新业务的落地进展和成本管控成效。在当前估值水平下，猫眼娱乐具备较高的长期投资价值，值得持续关注和战略性布局。</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const chartFont = {
+                family: "'Noto Sans SC', sans-serif"
+            };
+            const textColor = '#212529';
+            const gridColor = '#E9ECEF';
+
+            // Chart 1: Market Share
+            const marketShareCtx = document.getElementById('marketShareChart');
+            if (marketShareCtx) {
+                new Chart(marketShareCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['猫眼娱乐', '淘票票', '其他平台'],
+                        datasets: [{
+                            label: '市场份额',
+                            data: [48.7, 36.2, 15.1],
+                            backgroundColor: 'rgba(13, 110, 253, 0.5)',
+                            borderColor: 'rgba(13, 110, 253, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 60,
+                                title: {
+                                    display: true,
+                                    text: '市场份额 (%)',
+                                    color: textColor,
+                                    font: chartFont
+                                },
+                                ticks: { color: textColor, font: chartFont },
+                                grid: { color: gridColor, borderDash: [5, 5] }
+                            },
+                            x: {
+                                ticks: { color: textColor, font: chartFont },
+                                grid: { display: false }
+                            }
+                        },
+                        plugins: {
+                            legend: { display: false },
+                            title: { display: false },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false,
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.dataset.label + ': ' + context.parsed.y + '%';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Chart 2: H1 Profit Comparison
+            const h1ProfitCtx = document.getElementById('h1ProfitChart');
+            if (h1ProfitCtx) {
+                new Chart(h1ProfitCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['2025年上半年', '2026年上半年 (预计中值)'],
+                        datasets: [{
+                            label: '归母净利润',
+                            data: [1.79, -0.30],
+                            backgroundColor: 'rgba(13, 110, 253, 0.5)',
+                            borderColor: 'rgba(13, 110, 253, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: '归母净利润 (亿元人民币)',
+                                    color: textColor,
+                                    font: chartFont
+                                },
+                                ticks: { color: textColor, font: chartFont },
+                                grid: { color: gridColor, borderDash: [5, 5] }
+                            },
+                            x: {
+                                ticks: { color: textColor, font: chartFont },
+                                grid: { display: false }
+                            }
+                        },
+                        plugins: {
+                            legend: { display: false },
+                            title: { display: false },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false,
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Chart 3: Revenue and Profit Forecast
+            const revenueProfitCtx = document.getElementById('revenueProfitChart');
+            if (revenueProfitCtx) {
+                new Chart(revenueProfitCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['2026年', '2027年', '2028年'],
+                        datasets: [
+                            {
+                                label: '营业收入 (国海证券)',
+                                data: [43.41, 47.58, 50.90],
+                                backgroundColor: 'rgba(13, 110, 253, 0.5)',
+                                borderColor: 'rgba(13, 110, 253, 1)',
+                                borderWidth: 1,
+                                yAxisID: 'yRevenue'
+                            },
+                            {
+                                label: '经调整净利润 (国海证券)',
+                                data: [4.98, 5.89, 6.73],
+                                type: 'line',
+                                borderColor: 'rgba(255, 159, 64, 1)',
+                                backgroundColor: 'rgba(255, 159, 64, 0.5)',
+                                tension: 0.1,
+                                yAxisID: 'yProfit'
+                            },
+                             {
+                                label: '营业收入 (申万宏源)',
+                                data: [null, 46.23, 49.19],
+                                backgroundColor: 'rgba(28, 177, 68, 0.5)',
+                                borderColor: 'rgba(28, 177, 68, 1)',
+                                borderWidth: 1,
+                                yAxisID: 'yRevenue',
+                                hidden: true
+                            },
+                             {
+                                label: '经调整净利润 (申万宏源)',
+                                data: [null, 6.03, 7.13],
+                                type: 'line',
+                                borderColor: 'rgba(153, 102, 255, 1)',
+                                backgroundColor: 'rgba(153, 102, 255, 0.5)',
+                                tension: 0.1,
+                                yAxisID: 'yProfit',
+                                hidden: true
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            mode: 'index',
+                            intersect: false,
+                        },
+                        scales: {
+                            yRevenue: {
+                                type: 'linear',
+                                position: 'left',
+                                title: {
+                                    display: true,
+                                    text: '营业收入 (亿元)',
+                                    color: textColor,
+                                    font: chartFont
+                                },
+                                ticks: { color: textColor, font: chartFont },
+                                grid: { color: gridColor, borderDash: [5, 5] },
+                                max: 65
+                            },
+                            yProfit: {
+                                type: 'linear',
+                                position: 'right',
+                                title: {
+                                    display: true,
+                                    text: '经调整净利润 (亿元)',
+                                    color: textColor,
+                                    font: chartFont
+                                },
+                                ticks: { color: textColor, font: chartFont },
+                                grid: { display: false },
+                                max: 10
+                            },
+                            x: {
+                                ticks: { color: textColor, font: chartFont },
+                                grid: { display: false }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: { color: textColor, font: chartFont }
+                            },
+                            title: { display: false },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Chart 4: PE Ratio
+            const peRatioCtx = document.getElementById('peRatioChart');
+            if (peRatioCtx) {
+                new Chart(peRatioCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['猫眼娱乐 (PE TTM)', '行业平均'],
+                        datasets: [{
+                            label: '市盈率',
+                            data: [9, 17.5], // Using average of 8-10 for Maoyan, and 15-20 for industry
+                            backgroundColor: [
+                                'rgba(13, 110, 253, 0.5)',
+                                'rgba(28, 177, 68, 0.5)'
+                            ],
+                            borderColor: [
+                                'rgba(13, 110, 253, 1)',
+                                'rgba(28, 177, 68, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 25,
+                                title: {
+                                    display: true,
+                                    text: '市盈率 (倍)',
+                                    color: textColor,
+                                    font: chartFont
+                                },
+                                ticks: { color: textColor, font: chartFont },
+                                grid: { color: gridColor, borderDash: [5, 5] }
+                            },
+                            x: {
+                                ticks: { color: textColor, font: chartFont },
+                                grid: { display: false }
+                            }
+                        },
+                        plugins: {
+                            legend: { display: false },
+                            title: { display: false },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
