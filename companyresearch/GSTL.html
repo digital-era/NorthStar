@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广深铁路2026~2028年经营发展分析与营收利润预测</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600&family=Noto+Serif+SC:wght@400;700&family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* General Setup */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #FFFFFF;
+            font-family: "Noto Serif SC", serif;
+            color: #212529;
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 50px 60px;
+            background-color: #FFFFFF;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+            border-radius: 8px;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Noto Sans SC", "Noto Serif SC", sans-serif;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 20px;
+            color: #212529;
+        }
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 0.4em;
+            margin-top: 2.5em;
+            margin-bottom: 1.2em;
+            position: relative;
+            padding-left: 1.1em;
+        }
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: calc(0.4em + 1px);
+            width: 6px;
+            background-color: #0D6EFD;
+            border-radius: 3px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+        h4 {
+            font-size: 18px;
+            margin-top: 1.8em;
+            margin-bottom: 0.8em;
+        }
+        p {
+            margin-bottom: 1.2em;
+        }
+        a {
+            color: #0D6EFD;
+            text-decoration: none;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+        a:hover {
+            color: #0a58ca;
+            text-decoration: underline;
+        }
+        strong, b {
+            color: #212529;
+            font-weight: 700;
+        }
+        code {
+            font-family: "Source Code Pro", monospace;
+            background-color: #e9ecef;
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #343a40;
+        }
+
+        /* Elements */
+        hr {
+            border: 0;
+            height: 2px;
+            background-image: linear-gradient(to right, rgba(13, 110, 253, 0), rgba(13, 110, 253, 0.75), rgba(13, 110, 253, 0));
+            margin: 3em 0;
+        }
+        blockquote {
+            border-left: 5px solid #0D6EFD;
+            padding-left: 1.5em;
+            margin: 1.5em 0;
+            color: #495057;
+            background-color: #f8f9fa;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+        ul, ol {
+            padding-left: 1.5em;
+        }
+        li {
+            margin-bottom: 0.6em;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2em 0;
+            font-size: 0.95em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+        th, td {
+            padding: 0.9em 1em;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        thead th {
+            font-family: "Noto Sans SC", sans-serif;
+            font-weight: 600;
+            color: #212529;
+        }
+        thead {
+            border-bottom: 2px solid #0D6EFD;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tbody tr:hover {
+            background-color: #e9ecef;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background-color: #F8F9FA;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1.5em 2em;
+            margin: 2em 0 3em 0;
+        }
+        .toc-title {
+            font-family: "Noto Sans SC", sans-serif;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin: 0 0 1em 0;
+            color: #212529;
+        }
+        .toc ul {
+            padding-left: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        .toc-level-2 > li {
+            margin-bottom: 0.8em;
+        }
+        .toc-level-2 > li > a {
+            font-weight: 600;
+        }
+        .toc-level-3 {
+            padding-left: 2em;
+            margin-top: 0.6em;
+        }
+        .toc-level-3 > li {
+            margin-bottom: 0.4em;
+        }
+        .toc li a {
+            color: #0D6EFD;
+        }
+        .toc li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Generated Chart */
+        .generated-chart {
+            margin: 2.5em auto;
+            padding: 1.5em;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .chart-canvas-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+        figcaption {
+            text-align: center;
+            margin-top: 1em;
+            font-size: 0.9em;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        /* Content Grouping */
+        .content-group {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1em 1.5em;
+            margin: 1.5em 0;
+        }
+        .content-group > *:first-child {
+            margin-top: 0;
+        }
+        .content-group > *:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>广深铁路2026~2028年经营发展分析与营收利润预测</h1>
+        <nav class="toc">
+            <div class="toc-title">目录</div>
+            <ul class="toc-level-2">
+                <li><a href="#section-1">一、公司概况与行业背景</a></li>
+                <li><a href="#section-2">二、2025年经营业绩回顾</a></li>
+                <li><a href="#section-3">三、2026~2028年经营发展分析</a>
+                    <ul class="toc-level-3">
+                        <li><a href="#section-3-1">1. 客运业务：高铁化转型与市场拓展</a></li>
+                        <li><a href="#section-3-2">2. 货运业务：物流化转型与改革红利</a></li>
+                        <li><a href="#section-3-3">3. 委托运输服务：稳健增长与网络效应</a></li>
+                        <li><a href="#section-3-4">4. 成本费用与盈利能力展望</a></li>
+                        <li><a href="#section-3-5">5. 资产重估与价值重估</a></li>
+                    </ul>
+                </li>
+                <li><a href="#section-4">四、营收利润预测（2026~2028年）</a></li>
+                <li><a href="#section-5">五、结论</a></li>
+            </ul>
+        </nav>
+        <h2 id="section-1">公司概况与行业背景</h2>
+        <p>广深铁路股份有限公司（股票代码：601333.SH/00525.HK）是中国铁路广州局集团有限公司旗下的核心运输企业，主营广深铁路及京广铁路广州至坪石段的客货运输业务，同时受托运营武广客专、广深港高铁等多条线路。公司线路纵贯广东省，连接广州、深圳两大核心城市，是粤港澳大湾区“轨道上的大湾区”战略中的关键一环。近年来，公司业务涵盖客运、货运、路网清算及委托运输服务等多个板块。客运方面，公司经营广深城际列车、过港直通车以及长途列车；货运方面，承担广深沿线的货物运输；此外，公司通过路网清算获得使用费收入，并为武广客专、广珠城际等提供委托运输服务。公司作为区域铁路运输龙头，其经营与发展深受宏观经济、行业政策及大湾区交通网络建设的影响。</p>
+        <p>行业层面，中国铁路网络正持续扩张升级。“十四五”期间，全国铁路固定资产投资保持高位，截至2026年前4个月，全国铁路固定资产投资同比增长3.2%。粤港澳大湾区作为国家重点发展区域，其轨道交通网络正加速融合，多制式轨道交通“四网融合”取得阶段性成果。2025年底，广湛高铁、广汕高铁等新线陆续开通，广深港高铁、广珠城际大幅增开列车班次。展望“十五五”规划（2026~2030年），广东将推进广清永高铁、广珠（澳）高铁、深南高铁、漳汕高铁、深汕高铁、珠肇高铁等一大批新线建设，预计到2028年前后陆续建成。这些新线投运将进一步加密大湾区铁路网络，为广深铁路带来新的机遇与挑战。</p>
+        <h2 id="section-2">2025年经营业绩回顾</h2>
+        <p>2025年，广深铁路克服新线分流压力，实现营业收入286.86亿元，同比增长5.89%；归属于上市公司股东的净利润14.26亿元，同比增长34.49%。这一亮眼业绩主要得益于客运业务的结构优化、货运物流化改革以及资产处置收益的增厚。</p>
+        <p><strong>客运业务：</strong> 2025年，公司完成旅客发送量6385.87万人，同比下降7.59%。尽管客运量下滑，但公司通过调整产品结构实现了“量减价增”。一方面，公司主动增开广州东至香港西九龙的过港直通车以及京广-广深港跨线动车组列车，带动长途车业务收入同比增长20.42%，直通车收入增长11.11%；另一方面，针对广深城际客流下滑，公司推进I、II线提质工程，将最高运行速度由160km/h提升至200km/h，并推出“公交化”定期票等灵活定价机制，以高频次和高性价比稳固通勤商旅基本盘。这些举措使得客运收入逆势增长3.11%至113.38亿元。然而，广深城际列车收入仍同比下降19.5%，反映出高铁新线开通对城际客流的分流影响。</p>
+        <p><strong>货运业务：</strong> 2025年，公司货运收入18.65亿元，同比增长14.89%。这主要得益于全国铁路货运物流化改革，公司收取的货运两端接取送达服务费被纳入核算，推动货运收入增速高于运量增速。全年货物发送量1548.12万吨，同比增长9.80%，其中煤炭、集装箱等货物发送量增加。货运业务在物流化转型下展现出稳健增长态势。</p>
+        <p><strong>路网清算及其他运输服务：</strong> 2025年，公司路网清算及其他运输服务收入53.15亿元，同比增长13.98%。这主要受益于全国铁路货运路网市场化清算体系改革，清算单价有所提高。同时，公司为武广客专、广深港客专等多条线路提供委托运输服务，委托运输服务收入84.55亿元，同比增长5.39%，主要因服务工作量增加及新增代办广州国际港货运服务。总体来看，运输服务业务为公司提供了稳定的增量收入来源。</p>
+        <p><strong>成本费用：</strong> 2025年，公司营业成本270.69亿元，同比增长6.6%，高于营收增速，致使毛利率由6.30%下降至5.63%。成本增长主要集中在工资及福利（人工成本占比近38%）和设备租赁及服务费（占比36.29%）两项。其中，广深城际线路提质工程导致维修成本同比大幅增加21.8%；普铁列车逐步退出，主营业务固定资产折旧同比下滑5.0%；广州东站改造升级，公司获得3.73亿元资产处置收益，增厚了当期业绩。费用方面，公司管理费用同比增长16.52%，销售费用因新媒体宣传营销支出大增1120.90%，但绝对额仍很小；财务费用同比增长19.73%，主要因利息收入减少和租赁负债利息支出增加。</p>
+        <p><strong>现金流与分红：</strong> 2025年，公司经营活动产生的现金流量净额34.62亿元，同比增长27.72%，显示盈利质量较高。期末货币资金较上年增长114.23%，资产负债率降至23.89%，财务结构进一步优化。公司拟向全体股东每10股派发现金红利0.90元（含税），现金分红比例约44.71%，持续保持稳定分红政策。截至2025年末，公司已无银行借款，财务成本压力可控。</p>
+        <p>总体而言，广深铁路2025年业绩实现了量减价增、利润高增。公司通过业务结构优化和资产盘活，成功对冲了新线分流压力，为2026~2028年的发展奠定了基础。</p>
+        <h2 id="section-3">2026~2028年经营发展分析</h2>
+        <p>展望2026~2028年，广深铁路的发展将围绕“客运高铁化转型、货运物流化升级、资产重估与大湾区网络融合”三大主线展开。</p>
+        <h3 id="section-3-1">1. 客运业务：高铁化转型与市场拓展</h3>
+        <p>广深铁路正经历从传统线路运营商向大湾区高铁网络运营商的关键跃迁。未来三年，公司客运业务有望受益于以下因素：</p>
+        <ul>
+            <li><strong>高铁网络扩张与班次加密：</strong> 2026年是“十五五”规划开局之年，大湾区多条新线将建成或开工。广湛高铁已于2025年底通车，广深港高铁、广珠城际在2026年大幅增开列车。2026年4月，广深至粤东环线列车经广深港、梅汕、龙龙高铁等线路开行；2026年9月，京港高铁（广深港高铁深圳北至香港西九龙段）预计开通。预计2026年广清永、广珠（澳）、湛海高铁将开工，2027年深南、漳汕、深汕、珠肇高铁将开通，2029年广深第二高铁将建成。这些新线的开通将显著提升公司提供委托运输服务的工作量和收入，同时为公司担当的高铁列车开行创造条件。例如，2023年公司接入广深港高铁并开行过港高铁列车后，即显著提升了客运收入。随着更多高铁线路接入广州东站（改造完成后），公司有望全面进入高铁运营领域，实现“从资源品走向运营商”的转型。公司作为大湾区铁路运营主力，预计将承接部分新建高铁线路的运营服务，从而开辟新的利润增长点。</li>
+            <li><strong>广深城际提质与客流回升：</strong> 2025年底，公司启动广深I、II线提质工程，将最高运行速度提升至200公里/小时，并增开列车班次。2026年4月起，广州东至福田站间每日开行动车组列车36列，较提质前增加8列，广州至深圳中间不停站列车运行时间压缩至1小时以内。提速和班次加密提升了广深城际的竞争力，吸引部分公路客运和自驾客流回流。2026年一季度，广深城际客运量同比增长16.1%，显示提质效果初显。尽管广深城际长期面临广深第二高铁等新线的潜在分流，但短期内提质带来的客流回升有望对冲部分压力。</li>
+            <li><strong>过港直通车需求旺盛：</strong> 随着内地与香港通关便利化，过港直通车业务需求持续高涨。2026年2-3月，大陆游客入境香港人次同比增长53%、16%。2026年一季度，公司过港直通车客运量同比增长5.9%，合作方港铁公司高铁客运量同比增长15.8%。公司持续增开过港列车班次，2025年已新增广州东至香港西九龙列车，2026年还将新增上海虹桥至香港西九龙列车。预计未来三年，过港直通车业务将保持高景气，为公司客运收入提供稳定增量。此外，2027年广南联络线建成后，广深港高铁在广州南站的位置劣势将被弥补，但预计2026年9月开通的京港高铁不途径广州，短期难以分流直通车。长期来看，2030年广州东站改造完成后，广深港高铁可引入广州中心城区，公司始发于广州东站的直通车有望受益，直通车收入有望持续增长。</li>
+            <li><strong>票价市场化改革：</strong> 2026年1月起施行的《广东省促进粤港澳大湾区内地九市轨道交通发展条例》鼓励建立多层次、差别化的票价体系。随着铁路运价机制从政府统一定价向指导价转变，公司拥有一定自主定价权的特定运营线有望受益。参考京沪高铁票价改革后基准票价上浮约20%，若广深铁路相关线路票价上浮，将显著增厚客运收入。例如，公司广深城际列车若实行市场化定价，可适度上浮票价以对冲成本上升，提升盈利能力。</li>
+        </ul>
+        <p>尽管存在新线分流和公路客运竞争，但广深铁路通过高铁化转型和灵活定价，有望在2026~2028年实现客运业务量的稳步回升和收入的持续增长。机构预测，2026~2028年公司营业收入年均增速在4%~6%左右，客运收入将是主要驱动力之一。</p>
+        <h3 id="section-3-2">2. 货运业务：物流化转型与改革红利</h3>
+        <p>广深铁路的货运业务正从传统“站到站”运输向“门到门”物流服务商转型，未来三年有望受益于铁路货运改革和市场拓展。</p>
+        <ul>
+            <li><strong>铁路货运物流化改革：</strong> 2025年，全国铁路实施货运市场化清算体系改革，货运两端接取送达服务费纳入核算，公司路网清算及其他运输服务收入同比增长13.98%，货物装卸费大幅增长300.6%至8.96亿元。这一改革有效提高了货运业务的盈利能力。公司物流中心与东莞某食品企业（年销售16万吨糖果）签订全程物流总包合同，开通发往北京、川渝、浙沪、安徽、湖南等方向的稳定班列，每车物流成本降低500元。此外，公司已落地杭州北→嘉兴山姆仓的“工厂直发+班列直达+末端直配”全链条物流项目。这些“物流总包”模式标志着公司从单纯承运人向综合物流解决方案提供商转型，有望在未来三年开拓更多高附加值白货（快消品、高值制造产品）运输市场，实现货运收入的持续增长。</li>
+            <li><strong>“公转铁”政策与市场机遇：</strong> 随着国家推动运输结构调整，“公转铁”政策持续发力。铁路货运在长距离、大宗物资运输上具备成本和环保优势。公司管内的京广南线及口岸货流有望吸引更多原本由公路运输的货物转至铁路，带来增量空间。尽管宏观经济波动可能影响大宗商品运输需求，但公司通过拓展集装箱、冷链等新兴运输领域，以及与港口、物流园区的联动，可部分对冲周期性波动。</li>
+            <li><strong>大湾区物流需求增长：</strong> 粤港澳大湾区经济发达，制造业和消费需求旺盛。广深铁路作为大湾区铁路货运的重要承运人，将受益于区域内物流需求的持续增长。公司可利用广州大田、深圳平盐等铁路物流基地，发展多式联运和城市配送，提升货运业务的附加值。预计未来三年，公司货运收入将保持稳健增长，增速有望达到中高个位数水平。</li>
+        </ul>
+        <h3 id="section-3-3">3. 委托运输服务：稳健增长与网络效应</h3>
+        <p>委托运输服务是广深铁路业务的重要组成部分，2011~2024年该业务收入从10亿元增长至80.2亿元，年复合增长率超过15%。未来三年，该业务有望继续受益于大湾区铁路网络的扩张。</p>
+        <ul>
+            <li><strong>网络扩张带来的增量：</strong> 公司目前受托运营武广客专、广珠城际、广深港客专、广珠铁路、厦深铁路、广东铁路、南广铁路、贵广铁路、茂湛铁路、深茂铁路、梅汕客专、东北铁路、赣深铁路、南沙港铁路、博贺港铁路、广汕铁路、梅龙铁路和广湛铁路等18家铁路公司。随着大湾区新线陆续投运，公司有望受托运营部分新建运营铁路线路及枢纽车站，包括广湛高铁、珠肇高铁、广佛西环线城际、深汕高铁、瑞金至梅州铁路、广南联络线、龙龙高铁、深江高铁、漳汕高铁、南珠高铁和赣深高铁西丽站等。这将为公司带来持续的委托运输服务工作量增长，预计该业务收入在2026~2028年将保持稳健增长。</li>
+            <li><strong>护城河与增长确定性：</strong> 广深铁路拥有46年过港直通车运营经验，对珠三角路网最为熟悉，新线开通后委托其代管是行业惯性路径。尽管该业务毛利率不高，属于“稳增不爆发”类型，但其增长具有较强的确定性，可为公司提供稳定的现金流。机构预测，2026~2028年公司归属净利润年均复合增速在5%左右，其中委托运输服务的稳健增长是重要支撑。</li>
+        </ul>
+        <h3 id="section-3-4">4. 成本费用与盈利能力展望</h3>
+        <p>未来三年，公司成本费用的管控将直接影响盈利能力的提升幅度。</p>
+        <ul>
+            <li><strong>成本端压力与优化：</strong> 2025年，公司人工成本和设备租赁费占总成本的73%以上，是主要刚性成本。随着铁路网络扩张和新线投运，公司固定资产折旧和设备租赁费可能进一步增加。然而，公司通过“普铁列车逐步退出”等措施，固定资产折旧已呈下滑趋势（2025年同比下滑5.0%）。广深城际提质工程的成本投入已在2025年集中体现，未来边际影响减弱。同时，公司积极推进管理创新和提质增效，管理费用增幅低于营收增速，管理效率有所提升。若未来铁路行业推进薪酬制度改革，人工成本上涨压力或有所缓解。总体来看，2026~2028年公司营业成本增速有望与营收增速趋于同步，毛利率有望企稳回升。</li>
+            <li><strong>费用控制：</strong> 公司财务费用处于较低水平，2025年仅占营业收入的0.2%，未来影响有限。销售费用虽因营销推广大增，但绝对额很小，对整体费用率影响不大。管理费用方面，随着公司治理结构优化和党组织工作经费计提等因素消化，管理费用率有望保持稳定或小幅下降。若公司推进股权激励等改革，可能产生一定费用，但预计整体可控。综合来看，公司期间费用率有望维持在1%左右的较低水平，对盈利能力影响较小。</li>
+            <li><strong>盈利能力提升：</strong> 在收入稳健增长、成本费用可控的背景下，公司盈利能力有望稳步提升。机构预测，2026~2028年公司归母净利润将分别达到13.91亿元、15.06亿元和15.51亿元，年均复合增速约5%。对应每股收益分别为0.20元、0.21元和0.22元。净资产收益率（ROE）也有望从2025年的5.16%提升至2028年的4.99%左右。若考虑资产处置收益等非经常性损益因素，公司盈利弹性可能进一步释放。</li>
+        </ul>
+        <h3 id="section-3-5">5. 资产重估与价值重估</h3>
+        <p>广深铁路拥有大湾区核心地段的稀缺土地与枢纽资产，其价值重估是未来三年影响公司基本面的重要因素。</p>
+        <ul>
+            <li><strong>广州东站改造及综合开发：</strong> 2025年7月，公司与广州市政府、广铁集团签订《广州东站改造项目合作协议》。项目总投资约166.6亿元，按照“地上+地下贯通”、14台24线规模改造广州东站。改造完成后，广州东站将接入广汕、赣深等多条高铁，提升高铁始发能力，促进高铁引入广州中心城区。更重要的是，公司通过参与该项目，可获得石牌客整所土地上盖综合开发权。石牌客整所位于广州天河区核心地段，面积约26.26万平方米，同步规划调整为TOD上盖综合开发（地面保留铁路功能，上盖建设住宅、商业、学校等）。参照2018年石牌旧货场收储案例（3.71万平方米收储获13.05亿元补偿、6亿元净利），本次石牌客整所面积约7倍，叠加天河核心区和TOD溢价，市场预期补偿及分成合计可达50~80亿元，净利20~30亿元。若该资产重估价值在未来三年逐步释放，将显著增厚公司业绩。</li>
+            <li><strong>其他土地盘活潜力：</strong> 公司在广州—深圳沿线拥有约1312万平方米铁路用地，账面值仅约122元/㎡，远低于市场价。除石牌客整所外，公司深圳笋岗（罗湖）地块约45万平方米、新塘站地块等均处于规划推进或前期阶段。这些土地资源若通过综合开发或收储盘活，将带来可观的资产处置收益和长期增值空间。虽然具体进度受政策、审批周期等因素影响，但方向明确，潜力巨大。</li>
+            <li><strong>市值管理与投资者回报：</strong> 公司于2026年2月发布《估值提升计划》，提出持续稳定现金分红、适时回购注销股份等措施。2026年4月，公司股东大会批准以1亿元自有资金回购A股股份并注销的方案，截至2026年7月末已回购约0.14%的股份。这些举措有望提升每股收益和净资产收益率，增强投资者信心。当前公司市净率仅约0.78倍，市盈率约15.55倍，估值处于历史低位。随着业绩增长和资产重估推进，公司估值有望修复。</li>
+        </ul>
+        <h2 id="section-4">营收利润预测（2026~2028年）</h2>
+        <p>综合以上分析，广深铁路2026~2028年的营收和利润有望保持稳健增长。主要预测假设包括：客运业务在高铁化转型和需求回升下实现量价齐升；货运业务受益于物流化改革和大湾区物流需求增长；委托运输服务随新线投运稳步增长；成本费用控制良好；资产处置收益逐步释放。</p>
+        <p>基于上述假设，机构对广深铁路未来三年的业绩预测如下：</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>年度</th>
+                    <th>营业收入（百万元）</th>
+                    <th>归母净利润（百万元）</th>
+                    <th>每股收益（元）</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2026年</td>
+                    <td>29971~30530</td>
+                    <td>1391~1500</td>
+                    <td>0.20~0.22</td>
+                </tr>
+                <tr>
+                    <td>2027年</td>
+                    <td>31304~32016</td>
+                    <td>1506~1590</td>
+                    <td>0.21~0.22</td>
+                </tr>
+                <tr>
+                    <td>2028年</td>
+                    <td>32330~33156</td>
+                    <td>1551~1650</td>
+                    <td>0.22~0.23</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><em>数据来源：机构预测</em></p>
+        <figure class="generated-chart">
+            <div class="chart-canvas-container">
+                <canvas id="profitForecastChart"></canvas>
+            </div>
+            <figcaption>图1：广深铁路2026-2028年营业收入与归母净利润预测（基于机构预测平均值）</figcaption>
+        </figure>
+        <p>上述预测区间体现了不同机构对增速和资产处置收益释放节奏的判断差异。总体而言，机构普遍认为公司2026~2028年净利润年均复合增速在5%~7%左右。若考虑广州东站改造等项目带来的额外收益，实际业绩有望超出预期。</p>
+        <h2 id="section-5">结论</h2>
+        <p>广深铁路正处于业务转型与价值重估的关键时期。公司依托粤港澳大湾区核心区位优势，通过客运高铁化转型、货运物流化升级以及资产盘活，有望在2026~2028年实现稳健的业绩增长。机构预测公司未来三年净利润年均复合增速约5%，营收规模稳步扩大。同时，公司积极提升治理水平和股东回报，回购注销股份与稳定分红并举，彰显长期发展信心。在铁路网络持续加密和政策支持的有利环境下，广深铁路具备业绩提升、现金流改善和估值修复的潜力，长期投资价值值得看好。投资者应关注公司新线投产带来的业务增量、资产重估进展以及铁路行业改革动向，以评估公司未来业绩的兑现情况。</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('profitForecastChart');
+            if (!ctx) return;
+
+            const chartData = {
+                labels: ['2026年', '2027年', '2028年'],
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: '营业收入 (百万元)',
+                        data: [30250.5, 31660, 32743],
+                        backgroundColor: 'rgba(13, 110, 253, 0.6)',
+                        borderColor: 'rgba(13, 110, 253, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'yRevenue',
+                        order: 2
+                    },
+                    {
+                        type: 'line',
+                        label: '归母净利润 (百万元)',
+                        data: [1445.5, 1548, 1600.5],
+                        backgroundColor: 'rgba(25, 135, 84, 0.7)',
+                        borderColor: 'rgba(25, 135, 84, 1)',
+                        borderWidth: 2.5,
+                        yAxisID: 'yProfit',
+                        tension: 0.1,
+                        fill: false,
+                        pointBackgroundColor: 'rgba(25, 135, 84, 1)',
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                        order: 1
+                    }
+                ]
+            };
+
+            const chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                stacked: false,
+                plugins: {
+                    title: {
+                        display: false
+                    },
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            color: '#212529',
+                            font: {
+                                family: "'Noto Sans SC', sans-serif",
+                                size: 13
+                            }
+                        }
+                    },
+                    tooltip: {
+                        titleFont: { family: "'Noto Sans SC', sans-serif", weight: '600' },
+                        bodyFont: { family: "'Noto Sans SC', sans-serif" },
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    label += new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY' }).format(context.parsed.y) + ' 百万';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: '#212529',
+                            font: {
+                                family: "'Noto Sans SC', sans-serif",
+                                size: 12
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    },
+                    yRevenue: {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        title: {
+                            display: true,
+                            text: '营业收入 (百万元)',
+                            color: '#212529',
+                            font: {
+                                family: "'Noto Sans SC', sans-serif",
+                                size: 14,
+                                weight: '600'
+                            }
+                        },
+                        ticks: {
+                            color: '#212529',
+                            font: {
+                                family: "'Noto Sans SC', sans-serif"
+                            }
+                        },
+                        grid: {
+                            color: '#E9ECEF',
+                            borderDash: [5, 5]
+                        },
+                        suggestedMax: 35000
+                    },
+                    yProfit: {
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        title: {
+                            display: true,
+                            text: '归母净利润 (百万元)',
+                            color: '#212529',
+                            font: {
+                                family: "'Noto Sans SC', sans-serif",
+                                size: 14,
+                                weight: '600'
+                            }
+                        },
+                        ticks: {
+                            color: '#212529',
+                            font: {
+                                family: "'Noto Sans SC', sans-serif"
+                            }
+                        },
+                        grid: {
+                            drawOnChartArea: false, 
+                        },
+                        suggestedMax: 1800
+                    }
+                }
+            };
+            
+            new Chart(ctx, {
+                data: chartData,
+                options: chartOptions
+            });
+        });
+    </script>
+</body>
+</html>
