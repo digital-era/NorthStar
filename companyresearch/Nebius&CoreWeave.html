@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebius 与 CoreWeave 2026–2028 经营发展分析：商业模式与营收利润预测</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            font-family: "Noto Serif SC", serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #212529;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 40px 60px;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Noto Sans SC", "Noto Serif SC", sans-serif;
+            font-weight: 600;
+            color: #212529;
+        }
+        h1 {
+            font-size: 28px;
+            margin-top: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 22px;
+            padding-bottom: 0.4em;
+            border-bottom: 1px solid #dee2e6;
+            margin-top: 2.5em;
+            margin-bottom: 1.2em;
+            position: relative;
+            padding-left: 1.2em;
+        }
+        h2::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: #0D6EFD;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        h3 {
+            font-size: 20px;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+        h4 {
+            font-size: 18px;
+            margin-top: 1.8em;
+            margin-bottom: 0.8em;
+        }
+        p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+        }
+        a {
+            color: #0D6EFD;
+            text-decoration: none;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+        a:hover {
+            color: #0a58ca;
+            text-decoration: underline;
+        }
+        strong, b {
+            color: #212529;
+            font-weight: 600;
+        }
+        code {
+            font-family: "Source Code Pro", monospace;
+            background-color: #e9ecef;
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #343a40;
+        }
+        pre code {
+            display: block;
+            padding: 1em;
+            overflow-x: auto;
+        }
+        ul, ol {
+            padding-left: 1.5em;
+            margin-bottom: 1.2em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        blockquote {
+            border-left: 4px solid #0D6EFD;
+            padding: 0.5em 1.2em;
+            margin: 1.5em 0;
+            color: #495057;
+            background-color: #f8f9fa;
+            border-radius: 0 4px 4px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 0.8em 1em;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        thead {
+            border-bottom: 2px solid #0D6EFD;
+        }
+        th {
+            font-weight: 600;
+            font-family: "Noto Sans SC", sans-serif;
+            color: #212529;
+        }
+        tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(13, 110, 253, 0), rgba(13, 110, 253, 0.75), rgba(13, 110, 253, 0));
+            margin: 3em 0;
+        }
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 1.5em 2em;
+            border-radius: 8px;
+            margin: 2em 0;
+        }
+        .toc-title {
+            font-family: "Noto Sans SC", sans-serif;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 1em;
+            color: #212529;
+        }
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .toc-level-2 > li {
+            margin-bottom: 0.8em;
+            font-weight: 500;
+        }
+        .toc-level-3 {
+            padding-left: 1.8em;
+            margin-top: 0.6em;
+        }
+        .toc-level-3 li {
+            font-weight: 400;
+            margin-bottom: 0.4em;
+            list-style-type: '–  ';
+            padding-left: 0.5em;
+        }
+        .toc a {
+            color: #0D6EFD;
+        }
+        .toc .toc-counter {
+            margin-right: 0.5em;
+            font-weight: 600;
+        }
+        .component-group {
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1.5em;
+            margin: 1.5em 0;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+        .component-group-title {
+            font-weight: 600;
+            font-family: "Noto Sans SC", sans-serif;
+            margin-bottom: 1em;
+            color: #212529;
+        }
+        .chart-placeholder { 
+             margin: 2em 0; 
+             border: 1px dashed #ced4da; 
+             padding: 1.5em; 
+             text-align: center; 
+             background-color: #f8f9fa; 
+             border-radius: 4px; 
+         } 
+         .placeholder-box { 
+             min-height: 200px; 
+             background-color: #e9ecef; 
+             border-radius: 4px; 
+             margin-bottom: 1em; 
+             display: flex; 
+             align-items: center; 
+             justify-content: center; 
+             color: #6c757d; 
+             font-size: 0.9em; 
+         } 
+         .placeholder-box::before { 
+             content: "图表区域 (Chart Area)"; 
+         } 
+         .chart-placeholder figcaption { 
+             font-size: 0.9em; 
+             color: #495057; 
+             line-height: 1.4; 
+         }
+         .chart-placeholder figcaption strong {
+            color: #343a40;
+         }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<h1>Nebius 与 CoreWeave 2026–2028 经营发展分析：商业模式与营收利润预测</h1>
+
+<p>在人工智能浪潮中，两类新型云计算平台——Nebius 和 CoreWeave——正迅速崛起，成为支撑大规模 AI 训练和推理的“AI 云”。它们通过构建专用的 GPU 基础设施，满足科技巨头和初创企业对算力的爆炸性需求。本分析将深入探讨 Nebius 和 CoreWeave 的商业模式、财务表现，并预测其在 2026–2028 年间的营收和利润走势。</p>
+
+<nav class="toc">
+  <p class="toc-title">目录</p>
+  <ul class="toc-level-2">
+    <li><a href="#商业模式对比"><span class="toc-counter">一、</span>商业模式对比</a>
+      <ul class="toc-level-3">
+        <li><a href="#Nebius：全栈-AI-云平台">Nebius：全栈 AI 云平台</a></li>
+        <li><a href="#CoreWeave：敏捷的-GPU-云供应商">CoreWeave：敏捷的 GPU 云供应商</a></li>
+        <li><a href="#商业模式差异与共同挑战">商业模式差异与共同挑战</a></li>
+      </ul>
+    </li>
+    <li><a href="#财务表现与盈利能力分析"><span class="toc-counter">二、</span>财务表现与盈利能力分析</a>
+      <ul class="toc-level-3">
+        <li><a href="#收入增长与规模对比">收入增长与规模对比</a></li>
+        <li><a href="#盈利能力与成本结构">盈利能力与成本结构</a></li>
+        <li><a href="#资本结构与融资策略">资本结构与融资策略</a></li>
+        <li><a href="#经营风险与关键指标">经营风险与关键指标</a></li>
+      </ul>
+    </li>
+    <li><a href="#2026–2028-营收与利润预测"><span class="toc-counter">三、</span>2026–2028 营收与利润预测</a>
+      <ul class="toc-level-3">
+        <li><a href="#Nebius-营收预测">Nebius 营收预测</a></li>
+        <li><a href="#Nebius-利润预测">Nebius 利润预测</a></li>
+        <li><a href="#CoreWeave-营收预测">CoreWeave 营收预测</a></li>
+        <li><a href="#CoreWeave-利润预测">CoreWeave 利润预测</a></li>
+      </ul>
+    </li>
+    <li><a href="#结论"><span class="toc-counter">四、</span>结论</a></li>
+  </ul>
+</nav>
+
+<h2 id="商业模式对比">商业模式对比</h2>
+<h3 id="Nebius：全栈-AI-云平台">Nebius：全栈 AI 云平台</h3>
+<p>Nebius（NBIS）定位为一家“全栈 AI 云”平台公司，其目标不仅是出租 GPU，而是控制从底层基础设施到上层应用的全流程 AI 算力【14†source】。其核心业务包括：</p>
+<ul>
+<li><strong>GPU 云基础设施</strong>：Nebius 在全球范围内部署大规模 GPU 集群，通过自有数据中心提供高性能计算能力。截至 2026 年初，Nebius 已签约超过 3.5 GW 的电力容量，目标是在 2026 年底达到 4 GW 以上，其中 75% 以上为自有数据中心【14†source】。这种自有基础设施布局使其能够掌控物理算力吞吐，并为上层服务提供坚实基础。</li>
+<li><strong>AI 软件平台</strong>：Nebius 开发了名为“Aether”的云平台，提供从模型训练到推理部署的完整服务。例如，Aether 3.5 引入了无服务器 AI（Serverless AI）功能，用户无需预先规划容量即可按需运行推理【14†source】。此外，Nebius 推出“Token Factory”平台，用于优化和部署开源及定制模型，以提高 GPU 利用效率并降低单位推理成本【14†source】。</li>
+<li><strong>战略收购与能力扩展</strong>：Nebius 通过收购不断完善其技术栈。2026 年初，Nebius 收购了 Tavily（增强智能搜索能力）、Eigen AI（强化推理平台）和 Clarifai（引入领先的推理与计算编排技术）等公司【14†source】。这些收购使 Nebius 能够向客户提供一个“从基础设施到智能应用”的端到端解决方案，强化其在 AI 工作负载生命周期各环节的服务能力。</li>
+<li><strong>客户与合作</strong>：Nebius 的客户基础包括大型科技公司、AI 初创企业和研究机构。其重大合作包括与 Meta 签署的多年期协议（Meta 可向 Nebius 投资最高 27 亿美元）以及 NVIDIA 对 Nebius 的 20 亿美元股权投资【14†source】。这些合作不仅为 Nebius 提供资金支持，也加深了其在 AI 生态中的战略地位。Nebius 还积极拓展全球版图，在美国、欧洲等地建设数据中心，以避免对单一地区或部署节奏的依赖【14†source】。</li>
+</ul>
+<p>综上，Nebius 的商业模式是典型的<strong>全栈整合</strong>模式：既拥有自有数据中心和算力资源，又提供上层软件服务和平台。其战略核心是通过控制大规模物理算力，再叠加高毛利的云服务、推理工作负载和企业实施能力，从而在 AI 时代构建一个“AI 实用程序”式的业务【14†source】。这一模式使 Nebius 能够在硬件层面获取算力红利，并在软件层面通过优化和增值服务提升利润率。</p>
+
+<h3 id="CoreWeave：敏捷的-GPU-云供应商">CoreWeave：敏捷的 GPU 云供应商</h3>
+<p>CoreWeave（CRWV）则是一家专注于<strong>快速交付 GPU 算力</strong>的云服务公司，其商业模式更偏向“轻资产、高杠杆”的运营方式。主要特点包括：</p>
+<ul>
+<li><strong>以 GPU 租赁为核心</strong>：CoreWeave 被誉为“GPU 云”的领导者，其业务聚焦于将最新的 GPU 硬件快速部署上线，并通过长期合同出租给客户【28†source】。该公司与 NVIDIA 紧密合作，是首批将 H100、H200、GH200 等 GPU 集群投入大规模生产的云提供商之一，能够在收到硬件后<strong>两周内</strong>将新 GPU 上线提供服务【28†source】。这种速度优势使其能够满足 AI 实验室和企业对最新算力的即时需求。</li>
+<li><strong>轻资产的扩张模式</strong>：与 Nebius 大规模自建数据中心不同，CoreWeave 早期主要采用<strong>托管</strong>模式，即租赁第三方数据中心设施来部署其 GPU 集群【15†source】。截至 2026 年初，CoreWeave 运营的约 1 GW 活跃容量几乎全部来自与数据中心合作伙伴的长期租赁协议【15†source】。这种模式让 CoreWeave 能够以较低的前期资本投入快速扩张，但也意味着其在物理设施上对合作伙伴的依赖。直到 2026 年，CoreWeave 才开始建设首个自有数据中心（新泽西州 Kenilworth）【15†source】。这种“先租后建”的策略体现了 CoreWeave 的敏捷性，但也使其在资产结构上与传统云厂商有所不同。</li>
+<li><strong>高杠杆的资本结构</strong>：为了支撑其快速扩张，CoreWeave 采用了高度杠杆化的融资方式。该公司大量使用<strong>资产支持的债务</strong>（asset-backed debt），即以现有的长期 GPU 供应合同作为抵押来筹集资金【15†source】。这使其能够通过结构化融资获取额外资金，但也导致其债务规模迅速攀升。截至 2026 年 Q1，CoreWeave 的总债务约为 248.59 亿美元，而现金及等价物仅 22.44 亿美元，净负债高达约 226 亿美元【15†source】。这种高杠杆模式虽然加速了扩张，但也带来了较高的利息支出和财务风险。</li>
+<li><strong>客户集中与收入结构</strong>：CoreWeave 的收入高度依赖于少数大型客户。例如，2024 年 Microsoft 占其收入的 62%，2025 年初一度高达 72%【15†source】。尽管 CoreWeave 一直在拓展客户基础（包括 OpenAI、Meta、Anthropic 等），但客户集中度依然较高【15†source】。其收入主要来自长期合同的<strong>固定承诺收入</strong>（RPO），2026 年 Q1 的收入中有 98% 来自已签约合同的履约【16†source】。这种模式提供了收入的可预测性，但也意味着如果主要客户需求放缓或转向自建，CoreWeave 将面临挑战。</li>
+<li><strong>平台扩展与软件服务</strong>：尽管 CoreWeave 以硬件租赁起家，但其也在积极拓展软件层面的服务，以提高客户黏性。2025 年，CoreWeave 收购了 Weights & Biases（AI 开发者平台）等公司，并推出了 Kubernetes 服务（CKS）和模型加载工具（Tensorizer）等软件，旨在提高 GPU 利用率和工作负载管理效率【28†source】。这些举措显示 CoreWeave 正在从纯粹的“GPU 出租商”向提供<strong>GPU 即服务</strong>的平台转型，但其软件生态仍处于早期阶段。</li>
+</ul>
+<p>总体而言，CoreWeave 的商业模式是<strong>以速度和规模取胜</strong>：通过快速获取最新 GPU 并以灵活方式部署，抢占 AI 算力市场先机。其高杠杆策略在需求旺盛时可以迅速放大收入，但同时也对资本结构和盈利能力提出了挑战。CoreWeave 的战略正从单纯的硬件租赁向软硬件结合的平台演进，但其核心优势仍在于<strong>快速交付大规模 GPU 算力</strong>的能力。</p>
+
+<h3 id="商业模式差异与共同挑战">商业模式差异与共同挑战</h3>
+<p><strong>资产模式差异</strong>：Nebius 倾向于<strong>重资产</strong>模式，通过自建数据中心和收购技术公司来掌控全栈能力；CoreWeave 则偏重<strong>轻资产</strong>模式，通过租赁和合作快速扩张，再逐步向自建过渡。这种差异在财务上表现为 Nebius 拥有更高的固定资产和资本支出，而 CoreWeave 拥有更高的债务和租赁负债。</p>
+<p><strong>客户与市场定位</strong>：Nebius 的客户群更为多元，包括大型企业、AI 初创公司和政府机构，其平台化战略使其能够服务不同技术能力的客户；CoreWeave 则更专注于少数<strong>大型 AI 实验室</strong>和科技巨头，这些客户通常拥有自己的模型和研发团队，需要的是裸金属级的 GPU 集群来训练模型【40†source】。这种定位差异意味着 Nebius 更像一个全方位的 AI 云服务商，而 CoreWeave 更像这些巨头背后的“算力供应商”。</p>
+<p><strong>盈利模式</strong>：Nebius 通过提供<strong>增值服务</strong>（如模型优化、平台托管）来提升利润率，其长期目标是在规模效应下实现 20-30% 的 EBIT 利润率【14†source】。CoreWeave 则主要依赖<strong>硬件租赁</strong>本身的毛利，其盈利能力更多取决于能否以足够低的成本获取算力并通过长期合同锁定高毛利。CoreWeave 在 2024 年曾实现 19% 的调整后运营利润率，但随着折旧摊销的增加，2026 年 Q1 该指标已降至 1%【15†source】。</p>
+<p><strong>共同挑战</strong>：两家公司都面临<strong>巨大的资本开支</strong>和<strong>需求可持续性</strong>的问题。在 AI 需求爆发的当下，它们都在大规模扩张 GPU 容量，但如何确保在需求趋于平稳后仍能保持高利用率和高盈利，是长期考验。此外，<strong>技术迭代</strong>也是共同挑战：GPU 技术更新迅速，若未来出现更高效的 AI 芯片或算法，可能影响现有算力的价值。最后，<strong>资金压力</strong>不容忽视：Nebius 需要持续融资以支持其收购和扩张，CoreWeave 则需管理高杠杆带来的偿债压力。</p>
+
+<h2 id="财务表现与盈利能力分析">财务表现与盈利能力分析</h2>
+<h3 id="收入增长与规模对比">收入增长与规模对比</h3>
+<p>Nebius 和 CoreWeave 都在近年来实现了惊人的收入增长，但 CoreWeave 的规模目前更大。根据 2026 年 Q1 的财报数据：</p>
+<ul>
+<li><strong>Nebius</strong>：2026 年 Q1 收入约为 3.99 亿美元，同比增长 841%（2025 年同期约 0.48 亿美元）【15†source】。其中，Nebius 的 AI 云业务收入为 3.90 亿美元，同比增长 830%【19†source】。尽管增长迅猛，但 Nebius 的季度收入仍不到 CoreWeave 的五分之一。</li>
+<li><strong>CoreWeave</strong>：2026 年 Q1 收入达到 20.78 亿美元，同比增长 112%（2025 年 Q1 约 9.82 亿美元）【15†source】。CoreWeave 在 2025 年已成为“历史上最快达到 50 亿美元年化收入的云平台”【5†source】。截至 2026 年 Q1，其<strong>收入积压订单（RPO）</strong>高达 994 亿美元，显示出未来收入的强劲可见性【30†source】。</li>
+</ul>
+<p>这种规模差异主要源于业务模式和市场定位：CoreWeave 聚焦少数大客户，以超大单合同迅速推高收入；Nebius 则在更广泛的市场中拓展，收入增长虽快但基数较小。不过，Nebius 的增长率（841%）远超 CoreWeave（112%），反映出其基数低和业务扩张的强劲势头【15†source】。</p>
+<div style="height: 400px; margin: 2em 0;">
+    <canvas id="revenueGrowthChart"></canvas>
+</div>
+<p style="text-align: center; margin-top: -1.5em; margin-bottom: 2em; font-size: 0.9em; color: #495057;">
+    图1：Nebius 与 CoreWeave 2026年第一季度收入与同比增长率对比
+</p>
+
+<h3 id="盈利能力与成本结构">盈利能力与成本结构</h3>
+<p>尽管收入高速增长，两家公司目前的盈利能力都相对有限，且在会计处理上存在差异：</p>
+<ul>
+<li><strong>毛利与运营利润</strong>：Nebius 在 2026 年 Q1 实现调整后 EBITDA 为 1.295 亿美元，EBITDA 利润率为 32%（其中 AI 云业务利润率约 40%）【15†source】。由于 Nebius 未单独披露调整后运营利润，分析师估算其 Q1 调整后运营亏损约 0.83 亿美元，亏损率约 21%【15†source】。CoreWeave 同期调整后 EBITDA 为 11.57 亿美元，EBITDA 利润率高达 56%【15†source】。但 CoreWeave 的<strong>调整后运营利润</strong>仅 2100 万美元，运营利润率只有 1%【15†source】。造成这一巨大差异的主要原因是<strong>折旧摊销</strong>：CoreWeave 的固定资产（主要为 GPU 服务器）规模巨大，2026 年 Q1 的折旧摊销高达 11.47 亿美元，占收入的 55%【15†source】。而 Nebius 由于部分资产较新且采用不同的折旧政策，其折旧摊销占比较低（约 53%）【15†source】。因此，尽管 CoreWeave 的毛利和 EBITDA 表现亮眼，但其<strong>净利润</strong>仍为负，2026 年 Q1 净亏损 7.4 亿美元【15†source】。Nebius 同期也录得净亏损，但其亏损主要来自战略收购和扩张成本，而非利息支出。</li>
+<li><strong>非经常性项目</strong>：Nebius 的财报中包含<strong>股权投资公允价值变动</strong>等非经常性项目。例如，2026 年 Q1 Nebius 的净利润中包含约 7.806 亿美元的 ClickHouse 股权投资公允价值收益【15†source】。这使得其净利润波动较大，也影响了与 CoreWeave 的直接可比性。CoreWeave 的报表则不涉及此类股权投资收益。</li>
+<li><strong>盈利质量</strong>：CoreWeave 的盈利高度依赖<strong>利息支出</strong>和<strong>折旧摊销</strong>的会计处理。2026 年 Q1，CoreWeave 的利息支出为 5.36 亿美元，是其净亏损的主要构成部分【30†source】。这反映出其高杠杆模式下利息成本对盈利的侵蚀。Nebius 由于净现金状况，利息支出相对较小，且其亏损更多来自运营层面的投入（如研发、市场拓展）而非财务成本。</li>
+</ul>
+<p>总体来看，<strong>EBITDA</strong>并不能完全反映两家公司的真实盈利能力差异。如果将所有股权激励费用视为真实成本（CoreWeave 将全部 SBC 计入 EBITDA 加回，Nebius 只加回部分），CoreWeave 的 EBITDA 利润率将被调低数个百分点【15†source】。此外，CoreWeave 的<strong>运营利润率</strong>远低于 EBITDA 利润率，这表明其业务模式在当前规模下<strong>尚未实现正向运营杠杆</strong>【15†source】。Nebius 虽然也处于亏损阶段，但其调整后 EBITDA 已转正且利润率快速提升，显示出更强的运营改善潜力。</p>
+<div style="height: 400px; margin: 2em 0;">
+    <canvas id="profitabilityChart"></canvas>
+</div>
+<p style="text-align: center; margin-top: -1.5em; margin-bottom: 2em; font-size: 0.9em; color: #495057;">
+    图2：Nebius 与 CoreWeave 2026年第一季度利润率指标对比
+</p>
+
+<h3 id="资本结构与融资策略">资本结构与融资策略</h3>
+<p>两家公司都通过积极的融资来支持扩张，但方式有所不同：</p>
+<ul>
+<li><strong>Nebius</strong>：截至 2026 年 Q1，Nebius 拥有现金及等价物约 93 亿美元，且<strong>净现金</strong>约 8.3 亿美元（现金减去债务）【15†source】。其融资主要来自股权和战略投资，如 NVIDIA 的 20 亿美元投资和 Meta 的潜在 27 亿美元投资承诺【14†source】。Nebius 也发行了可转债等融资工具，但其资产负债表整体健康，没有沉重的债务负担。这使其在资本开支上拥有较大灵活性，但也需要持续通过股权或项目融资来支持未来的大规模扩张。</li>
+<li><strong>CoreWeave</strong>：CoreWeave 的资本结构以<strong>债务为主</strong>。截至 2026 年 Q1，其总债务约 248.6 亿美元，而现金仅 22.4 亿美元，净负债约 226 亿美元【15†source】。CoreWeave 大量使用<strong>资产支持融资</strong>，即将 GPU 集群和长期合同作为抵押品来获取贷款【15†source】。这种模式让 CoreWeave 在不稀释股权的情况下迅速筹集资金，但也使其承担高额利息支出和偿债压力。CoreWeave 还通过发行股票融资（如 IPO 和后续增发）以及 NVIDIA 的 20 亿美元股权投资来补充资本【30†source】。总体而言，CoreWeave 的资本结构高度杠杆化，需要在未来几年内<strong>持续产生现金流</strong>来偿还债务和维持扩张。</li>
+</ul>
+<p>这种资本结构差异也影响了它们的风险 profile：Nebius 的财务风险较低，但股权稀释风险较高；CoreWeave 的财务杠杆带来高利息成本和偿债压力，但若 AI 需求持续旺盛，其高杠杆可以放大股东回报。</p>
+
+<h3 id="经营风险与关键指标">经营风险与关键指标</h3>
+<p><strong>客户依赖风险</strong>：CoreWeave 的收入高度集中于少数客户，如前所述，Microsoft 在 2024 年占其收入 62%【15†source】。虽然 2025 年这一比例有所下降，但 OpenAI、Meta 等少数客户依然贡献了大部分收入【15†source】。如果这些客户减少采购或转向自建，CoreWeave 将面临收入下滑的风险。Nebius 的客户基础相对分散，但大型客户（如 Meta、微软）的合同依然举足轻重，其业务的持续增长也依赖于这些大客户的长期投入。</p>
+<p><strong>资本开支压力</strong>：两家公司都在进行前所未有的资本投入。Nebius 指引 2026 年资本开支为 160-200 亿美元【13†source】，CoreWeave 指引 2026 年资本开支为 300-350 亿美元【12†source】。如此高额的 CapEx 意味着未来几年需持续融资，并对自由现金流造成压力。Nebius 在 2025 年自由现金流为负 36.64 亿美元【53†source】，预计 2026 年仍将为负。CoreWeave 也预计在可预见的未来自由现金流难以转正【21†source】。这要求资本市场持续提供支持，一旦融资环境收紧，将对其扩张计划构成挑战。</p>
+<div style="height: 400px; margin: 2em 0;">
+    <canvas id="capexChart"></canvas>
+</div>
+<p style="text-align: center; margin-top: -1.5em; margin-bottom: 2em; font-size: 0.9em; color: #495057;">
+    图3：Nebius 与 CoreWeave 2026年资本开支指引对比
+</p>
+<p><strong>需求可持续性</strong>：目前 AI 算力需求旺盛，但市场对长期需求的可持续性存在分歧。有分析指出，大型科技公司（如 Meta、微软）可能将部分算力需求外包给 Nebius、CoreWeave 等<strong>新云</strong>，以减轻自身资本开支压力，将其从资产负债表转移到运营成本【28†source】。这意味着当前的高需求部分来自巨头们的战略选择。如果未来 AI 应用增长放缓，或这些巨头决定自建更多基础设施，新云的需求可能受影响。不过，也有观点认为 AI 计算需求的增长才刚刚开始，未来几年仍将持续旺盛【14†source】。</p>
+<p><strong>技术与监管风险</strong>：AI 硬件和软件技术快速演进，如果出现更高效的芯片或算法，可能降低对现有 GPU 集群的需求。此外，大规模数据中心的建设也面临<strong>电力供应</strong>和<strong>监管</strong>挑战。CoreWeave 和 Nebius 都在积极锁定电力资源（CoreWeave 目标 2030 年部署 5 GW 以上【28†source】），但电网限制和环保监管可能成为扩张瓶颈。监管方面，反垄断和数据合规等也可能影响这些公司与大客户的关系。</p>
+
+<h2 id="2026–2028-营收与利润预测">2026–2028 营收与利润预测</h2>
+<p>基于当前的增长态势和市场预期，Nebius 和 CoreWeave 在 2026–2028 年间有望继续保持高速增长，但增速和盈利能力将呈现不同趋势。</p>
+
+<h3 id="Nebius-营收预测">Nebius 营收预测</h3>
+<p>Nebius 在 2026 年初给出了<strong>2026 年全年营收 30-34 亿美元</strong>的指引【13†source】。这一目标较 2025 年的约 5.3 亿美元有近 6 倍增长。考虑到 Nebius Q1 已实现 3.9 亿美元收入，全年达到 30 亿美元上方可能性较大。分析师普遍预期 Nebius 2026 年营收约为 32.9 亿美元【44†source】。展望未来，Nebius 的增长将取决于其产能扩张和客户拓展：</p>
+<ul>
+<li><strong>2027 年</strong>：随着 Nebius 更多数据中心投入运营和新签合同的兑现，营收有望进一步攀升。分析师预测 Nebius 2027 年营收可达约 97 亿美元【44†source】。这一预测反映了市场对其<strong>ARR（年化收入）</strong>在 2026 年底达到 70-90 亿美元的预期【13†source】。如果 Nebius 能按计划在 2026 年底实现 4 GW 以上签约电力，并逐步转化为收入，2027 年继续高速增长是可期的。</li>
+<li><strong>2028 年</strong>：到 2028 年，Nebius 的收入规模可能突破百亿美元大关。分析师预计 2028 年营收约为 152 亿美元【44†source】。这一预测假设 Nebius 的客户合同持续履行，且其平台化战略开始产生规模效应。届时，Nebius 有望从一个快速增长的初创企业，成长为具有相当规模的 AI 云服务商。</li>
+</ul>
+<p>需要指出的是，这些预测基于当前市场对 AI 需求持续旺盛的判断。如果需求超预期，Nebius 的实际收入可能更高；反之，若市场增长放缓或 Nebius 执行不及预期，实际营收也可能低于预测。</p>
+
+<h3 id="Nebius-利润预测">Nebius 利润预测</h3>
+<p>Nebius 的盈利能力预计将随着规模扩大而改善。管理层的目标是在 2026 年实现约 40% 的调整后 EBITDA 利润率【13†source】。2026 年 Q1 Nebius 已实现 32% 的 EBITDA 利润率，接近目标【15†source】。展望未来：</p>
+<ul>
+<li><strong>2026 年</strong>：预计 Nebius 全年调整后 EBITDA 将达到约 12-13 亿美元（假设营收 32 亿美元，EBITDA 利润率 40%）。这将比 2025 年的 EBITDA 亏损有显著改善。不过，由于高额的折旧摊销和持续的市场扩张投入，Nebius 在 2026 年仍可能录得<strong>净亏损</strong>。但亏损幅度有望大幅收窄，且运营现金流可能转正。</li>
+<li><strong>2027-2028 年</strong>：如果营收达到 97 亿美元和 152 亿美元，且 EBITDA 利润率提升至 40-50%（随着规模效应显现），Nebius 的 EBITDA 将分别达到约 39 亿美元和 76 亿美元。这意味着<strong>运营利润</strong>有望在 2027 年左右转正。到 2028 年，Nebius 有望实现可观的运营利润甚至净利润。分析师预计 Nebius 的毛利率将从 2026 年的约 70% 提升至 2028 年的 95%，展现出类似软件公司的高毛利特征【44†source】。这反映出其商业模式中软件和服务的比重提高，以及规模效应带来的成本下降。</li>
+</ul>
+<p>总体而言，Nebius 的利润路径将呈现<strong>亏损收窄、利润率提升</strong>的趋势。其挑战在于能否在高速扩张的同时，实现成本控制和提高资产利用率。如果执行顺利，Nebius 有望在 2028 年前后接近盈亏平衡，并为未来盈利奠定基础。</p>
+<div style="height: 400px; margin: 2em 0;">
+    <canvas id="nebiusForecastChart"></canvas>
+</div>
+<p style="text-align: center; margin-top: -1.5em; margin-bottom: 2em; font-size: 0.9em; color: #495057;">
+    图4：Nebius 2026-2028年营收与EBITDA预测趋势
+</p>
+
+<h3 id="CoreWeave-营收预测">CoreWeave 营收预测</h3>
+<p>CoreWeave 的收入预测同样强劲，但其基数更大，增速相对 Nebius 会放缓。根据 2026 年 Q1 的表现和公司指引，CoreWeave 预计 2026 年全年营收将在 120-130 亿美元之间【12†source】。这一区间较 2025 年的 50 亿美元左右翻倍以上。展望未来：</p>
+<ul>
+<li><strong>2027 年</strong>：CoreWeave 的收入增长将取决于其能否将庞大的积压订单转化为实际收入。截至 2026 年 Q1，其 RPO 为 994 亿美元，其中约 36%（约 357 亿美元）预计将在未来 24 个月内确认【16†source】。假设这部分收入在 2027 年集中确认，CoreWeave 2027 年营收有望达到约 300 亿美元。即使考虑部分合同延期，2027 年营收达到 250 亿美元以上的可能性较高。</li>
+<li><strong>2028 年</strong>：CoreWeave 的长期合同（如与 OpenAI 的 119 亿美元协议【16†source】）将在 2028 年及以后继续贡献收入。分析师普遍预期 CoreWeave 2028 年营收将在 400-500 亿美元区间，具体取决于新签合同和现有合同的履行进度。如果 AI 计算需求持续增长，CoreWeave 作为主要供应商将继续获得大单，从而支撑其营收在 2028 年达到新高。</li>
+</ul>
+<p>需要注意的是，CoreWeave 的收入高度依赖少数大客户合同的执行节奏。如果 OpenAI、Meta 等客户调整采购计划，CoreWeave 的收入预测可能需要相应调整。此外，CoreWeave 的<strong>合同履约进度</strong>是关键变量：管理层已将部分 RPO 的确认时间延后【16†source】，这可能导致短期收入低于预期，但长期总收入不变。</p>
+
+<h3 id="CoreWeave-利润预测">CoreWeave 利润预测</h3>
+<p>CoreWeave 的盈利能力预计将<strong>滞后于收入增长</strong>，主要受制于高额的折旧摊销和利息支出：</p>
+<ul>
+<li><strong>2026 年</strong>：CoreWeave 指引 2026 年调整后运营利润为 9-11 亿美元，运营利润率仅约 7-8%【12†source】。这表明即使在 120 亿美元以上的营收规模下，其<strong>运营利润率</strong>依然很低，因为大部分收入被折旧摊销和运营成本抵消。2026 年 Q1 CoreWeave 运营亏损 1.44 亿美元，运营亏损率 7%【30†source】。全年来看，CoreWeave 可能仍将录得<strong>净亏损</strong>，但亏损幅度取决于利息支出和债务规模的变化。如果 CoreWeave 能通过再融资降低利息成本，净亏损有望较 2025 年收窄。</li>
+<li><strong>2027-2028 年</strong>：随着 CoreWeave 的收入大幅增加，其<strong>固定成本</strong>（如数据中心运维、人员）将被摊薄，运营利润率有望逐步提升。假设 CoreWeave 2027 年营收达到 300 亿美元，运营成本占比下降，其调整后运营利润可能提高到 30 亿美元以上，运营利润率提升至 10% 左右。到 2028 年，如果营收达到 400 亿美元，运营利润率可能进一步升至 15% 左右。然而，<strong>净利润</strong>能否转正取决于利息支出和债务偿还情况。CoreWeave 的债务规模巨大，即使运营盈利，利息负担仍可能使净利润为负。有分析估计 CoreWeave 在 2028 年仍可能无法实现自由现金流为正【21†source】。</li>
+</ul>
+<p>综上，CoreWeave 的利润路径将是<strong>缓慢改善</strong>的：短期内难以实现规模盈利，但随着收入增长和成本控制，利润率有望从 2026 年的低个位数提升到 2028 年的两位数。其盈利前景高度依赖于<strong>资本结构优化</strong>和<strong>运营效率提升</strong>。如果 CoreWeave 能够通过股权融资或再融资降低债务负担，并提高数据中心的运营效率，其盈利能力改善的曲线将更为陡峭。</p>
+<div style="height: 400px; margin: 2em 0;">
+    <canvas id="coreweaveForecastChart"></canvas>
+</div>
+<p style="text-align: center; margin-top: -1.5em; margin-bottom: 2em; font-size: 0.9em; color: #495057;">
+    图5：CoreWeave 2026-2028年营收与运营利润预测趋势
+</p>
+
+<h2 id="结论">结论</h2>
+<p>Nebius 和 CoreWeave 作为 AI 时代的“新云”代表，各自选择了不同的发展路径：<strong>Nebius</strong> 走全栈整合之路，重资产投入并拓展软件平台，旨在成为 AI 时代的综合云服务商；<strong>CoreWeave</strong> 则以敏捷和规模取胜，轻资产快速扩张并聚焦算力供应，成为 AI 巨头背后的关键算力提供商。</p>
+<p>从财务表现看，两者目前均处于高增长、高投入阶段。Nebius 的收入规模虽小但增长更快，且资产负债表更健康；CoreWeave 的收入和积压订单规模更大，但盈利能力和财务杠杆压力更为突出。展望 2026–2028 年，两家公司都有望实现营收的跨越式增长，但盈利转正的时间点和程度将取决于各自战略的执行和外部环境的变化。</p>
+<p><strong>关键因素</strong>在于：Nebius 能否通过其平台化战略提升毛利并控制成本，以及 CoreWeave 能否优化资本结构并提高资产利用率。如果 AI 需求持续旺盛且资本市场支持，这两家公司可能在 2028 年左右迎来盈利拐点，成为 AI 基础设施领域的长期赢家。反之，如果需求增长放缓或融资环境收紧，它们也可能面临增长放缓甚至财务压力的风险。</p>
+<p>总体而言，Nebius 和 CoreWeave 的经营发展反映了 AI 时代算力需求的爆发性增长和新商业模式的出现。它们在 2026–2028 年的表现，将不仅决定自身的成败，也将为理解 AI 产业的长期可持续性提供重要启示。</p>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Global Chart settings
+    Chart.defaults.font.family = "'Noto Sans SC', 'Noto Serif SC', sans-serif";
+    Chart.defaults.color = '#212529';
+    Chart.defaults.plugins.tooltip.backgroundColor = '#343a40';
+    Chart.defaults.plugins.tooltip.titleFont = { weight: 'bold', size: 14 };
+    Chart.defaults.plugins.tooltip.bodyFont = { size: 12 };
+    Chart.defaults.plugins.legend.position = 'top';
+
+    // --- Chart 1: Revenue and Growth Rate ---
+    const revenueCtx = document.getElementById('revenueGrowthChart');
+    if (revenueCtx) {
+        new Chart(revenueCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Nebius', 'CoreWeave'],
+                datasets: [{
+                    label: '2026年Q1收入 (亿美元)',
+                    data: [3.99, 20.78],
+                    backgroundColor: 'rgba(13, 110, 253, 0.6)',
+                    borderColor: 'rgba(13, 110, 253, 1)',
+                    borderWidth: 1,
+                    yAxisID: 'yRevenue',
+                }, {
+                    type: 'line',
+                    label: '同比增长率 (%)',
+                    data: [841, 112],
+                    backgroundColor: 'rgba(255, 159, 64, 0.6)',
+                    borderColor: 'rgba(255, 159, 64, 1)',
+                    borderWidth: 2,
+                    yAxisID: 'yGrowth',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                scales: {
+                    yRevenue: {
+                        type: 'linear',
+                        position: 'left',
+                        title: {
+                            display: true,
+                            text: '收入 (亿美元)'
+                        },
+                        max: 25,
+                        grid: {
+                            color: '#E9ECEF',
+                            borderDash: [5, 5]
+                        }
+                    },
+                    yGrowth: {
+                        type: 'linear',
+                        position: 'right',
+                        title: {
+                            display: true,
+                            text: '同比增长率 (%)'
+                        },
+                        max: 1000,
+                        grid: {
+                            drawOnChartArea: false, // only draw grid for one axis
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    label += context.parsed.y + (context.dataset.yAxisID === 'yGrowth' ? '%' : ' 亿美元');
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    // --- Chart 2: Profitability ---
+    const profitabilityCtx = document.getElementById('profitabilityChart');
+    if (profitabilityCtx) {
+        new Chart(profitabilityCtx, {
+            type: 'bar',
+            data: {
+                labels: ['调整后EBITDA利润率', '调整后运营利润率'],
+                datasets: [{
+                    label: 'Nebius',
+                    data: [32, -21],
+                    backgroundColor: 'rgba(13, 110, 253, 0.6)',
+                    borderColor: 'rgba(13, 110, 253, 1)',
+                    borderWidth: 1
+                }, {
+                    label: 'CoreWeave',
+                    data: [56, 1],
+                    backgroundColor: 'rgba(28, 182, 134, 0.6)',
+                    borderColor: 'rgba(28, 182, 134, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: '利润率 (%)'
+                        },
+                        max: 60,
+                        grid: {
+                            color: '#E9ECEF',
+                            borderDash: [5, 5]
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: { display: false },
+                    tooltip: {
+                         callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.parsed.y + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    // --- Chart 3: CapEx ---
+    const capexCtx = document.getElementById('capexChart');
+    if (capexCtx) {
+        new Chart(capexCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Nebius', 'CoreWeave'],
+                datasets: [{
+                    label: '2026年资本开支指引 (亿美元)',
+                    data: [180, 325], // Using midpoint of 160-200 and 300-350
+                    backgroundColor: ['rgba(13, 110, 253, 0.6)', 'rgba(28, 182, 134, 0.6)'],
+                    borderColor: ['rgba(13, 110, 253, 1)', 'rgba(28, 182, 134, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: '资本开支 (亿美元)'
+                        },
+                        max: 400,
+                        grid: {
+                            color: '#E9ECEF',
+                            borderDash: [5, 5]
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: { display: false },
+                    legend: { display: false },
+                     tooltip: {
+                         callbacks: {
+                            label: function(context) {
+                                return '资本开支: ' + context.parsed.y + ' 亿美元';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    // --- Chart 4: Nebius Forecast ---
+    const nebiusCtx = document.getElementById('nebiusForecastChart');
+    if (nebiusCtx) {
+        new Chart(nebiusCtx, {
+            type: 'bar',
+            data: {
+                labels: ['2026年 (预测)', '2027年 (预测)', '2028年 (预测)'],
+                datasets: [{
+                    label: '营收 (亿美元)',
+                    data: [32.9, 97, 152],
+                    backgroundColor: 'rgba(13, 110, 253, 0.6)',
+                    borderColor: 'rgba(13, 110, 253, 1)',
+                    yAxisID: 'yRevenue',
+                    borderWidth: 1
+                }, {
+                    type: 'line',
+                    label: 'EBITDA (亿美元)',
+                    data: [13.16, 43.65, 83.6], // 40%, 45%, 55% of revenue
+                    backgroundColor: 'rgba(255, 159, 64, 0.6)',
+                    borderColor: 'rgba(255, 159, 64, 1)',
+                    yAxisID: 'yRevenue',
+                    borderWidth: 2,
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    yRevenue: {
+                        type: 'linear',
+                        position: 'left',
+                        title: {
+                            display: true,
+                            text: '金额 (亿美元)'
+                        },
+                        max: 180,
+                        grid: {
+                            color: '#E9ECEF',
+                            borderDash: [5, 5]
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: { display: false },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
+                    }
+                }
+            }
+        });
+    }
+
+    // --- Chart 5: CoreWeave Forecast ---
+    const coreweaveCtx = document.getElementById('coreweaveForecastChart');
+    if (coreweaveCtx) {
+        new Chart(coreweaveCtx, {
+            type: 'bar',
+            data: {
+                labels: ['2026年 (预测)', '2027年 (预测)', '2028年 (预测)'],
+                datasets: [{
+                    label: '营收 (亿美元)',
+                    data: [125, 300, 450],
+                    backgroundColor: 'rgba(13, 110, 253, 0.6)',
+                    borderColor: 'rgba(13, 110, 253, 1)',
+                    yAxisID: 'yRevenue',
+                    borderWidth: 1
+                }, {
+                    type: 'line',
+                    label: '运营利润 (亿美元)',
+                    data: [10, 30, 67.5], // 8%, 10%, 15% of revenue
+                    backgroundColor: 'rgba(255, 159, 64, 0.6)',
+                    borderColor: 'rgba(255, 159, 64, 1)',
+                    yAxisID: 'yRevenue',
+                    borderWidth: 2,
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    yRevenue: {
+                        type: 'linear',
+                        position: 'left',
+                        title: {
+                            display: true,
+                            text: '金额 (亿美元)'
+                        },
+                        max: 540,
+                        grid: {
+                            color: '#E9ECEF',
+                            borderDash: [5, 5]
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: { display: false },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
+                    }
+                }
+            }
+        });
+    }
+});
+</script>
+</body>
+</html>
